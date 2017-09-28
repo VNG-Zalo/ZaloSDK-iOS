@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ZaloSDK_Example' do
+  pod 'ZaloSDK', :path => '../'
+
+  target 'ZaloSDK_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
