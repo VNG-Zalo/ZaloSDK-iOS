@@ -1,5 +1,5 @@
 PODS:
-  - ZaloSDK (0.1.0)
+  - ZaloSDK (2.2.0928)
 
 DEPENDENCIES:
   - ZaloSDK (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  ZaloSDK: 2eeeef42ad512cd266fe9e1b39318165e05d8ac9
+  ZaloSDK: 9bb20d9cea224e716918c946320355e74b66e019
 
 PODFILE CHECKSUM: 0a055c69f95a6c24a7a028a5a306a33dcca607f4
 

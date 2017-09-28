@@ -1,22 +1,27 @@
 {
   "name": "ZaloSDK",
-  "version": "0.1.0",
-  "summary": "A short description of ZaloSDK.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/acct<blob>=<NULL>/ZaloSDK",
+  "version": "2.2.0928",
+  "summary": "Zalo SDK",
+  "description": "Zalo software development kit for iOS\nDocument: http://developers.zalo.me/docs/sdk/ios-sdk-9",
+  "homepage": "http://developers.zalo.me/docs/sdk/ios-sdk-9",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "acct<blob>=<NULL>": "liemvouy@gmail.com"
+    "Liem Vo": "liemvouy@gmail.com"
   },
   "source": {
-    "git": "https://github.com/acct<blob>=<NULL>/ZaloSDK.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/VNG-Zalo/ZaloSDK-iOS.git",
+    "tag": "2.2.0928"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "ZaloSDK/Classes/**/*"
+  "ios": {
+    "vendored_frameworks": [
+      "ZaloSDK/Frameworks/ZaloSDKCoreKit.framework",
+      "ZaloSDK/Frameworks/ZaloSDK.framework"
+    ]
+  }
 }
