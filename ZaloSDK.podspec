@@ -1,42 +1,32 @@
 #
-# Be sure to run `pod lib lint ZaloSDK.podspec' to ensure this is a
+# Be sure to run `pod spec lint ZaloSDKFramework.podspec' to ensure this is a
 # valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'ZaloSDK'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of ZaloSDK.'
+s.name             = 'ZaloSDK
+s.version          = '2.2.0928'
+s.summary          = 'Zalo SDK'
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+s.description      = <<-DESC
+Zalo software development kit for iOS
+Document: http://developers.zalo.me/docs/sdk/ios-sdk-9
+DESC
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+s.homepage         = 'http://developers.zalo.me/docs/sdk/ios-sdk-9'
+s.license          = { :type => 'MIT', :file => 'LICENSE' }
+s.author           = { 'Liem Vo' => 'liemvouy@gmail.com' }
+s.source           = { :git => 'https://github.com/liemvu/ZaloSDKFramework.git', :tag => s.version.to_s }
 
-  s.homepage         = 'https://github.com/acct<blob>=<NULL>/ZaloSDK'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'acct<blob>=<NULL>' => 'liemvouy@gmail.com' }
-  s.source           = { :git => 'https://github.com/acct<blob>=<NULL>/ZaloSDK.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+s.ios.deployment_target = '8.0'
 
-  s.ios.deployment_target = '8.0'
-
-  s.source_files = 'ZaloSDK/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'ZaloSDK' => ['ZaloSDK/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+s.source_files = 'ZaloSDKFramework/ZaloSDKFramework-umbrella.h', 'ZaloSDKFramework/Classes/**/*'
+s.public_header_files = 'ZaloSDKFramework/ZaloSDKFramework-umbrella.h'
+s.module_map = 'ZaloSDKFramework/module.modulemap'
+s.ios.vendored_frameworks = 'ZaloSDKFramework/Frameworks/ZaloSDKCoreKit.framework', 'ZaloSDKFramework/Frameworks/ZaloSDK.framework'
+#  s.pod_target_xcconfig = {
+#      'OTHER_LDFLAGS' => '-framework ZaloSDK -framework ZaloSDKCoreKit',
+#      'FRAMEWORK_SEARCH_PATHS' => '${PODS_ROOT}/ZaloSDKFramework/ZaloSDKFramework/Frameworks/**'
+#
+#  }
 end
