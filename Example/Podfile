@@ -1,8 +1,10 @@
 use_frameworks!
 
-target 'ZaloSDK_Example' do
+target 'ZaloSDK_Demo' do
   pod 'ZaloSDK', :path => '../'
-
+  pod 'AlamofireImage', '~> 3.3'
+  pod 'Eureka', '~> 3.1'
+  
   target 'ZaloSDK_Tests' do
     inherit! :search_paths
 
