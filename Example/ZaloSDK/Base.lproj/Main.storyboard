@@ -1,27 +1,246 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="whP-gf-Uak">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AfH-ap-c8M">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="wQg-tq-qST">
+        <!--Login View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="whP-gf-Uak" customClass="ZDKViewController" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="LoginViewController" customModule="ZaloSDK_Demo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="uEw-UM-LJ8"/>
-                        <viewControllerLayoutGuide type="bottom" id="Mvr-aV-6Um"/>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="TpU-gO-2f1">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KS1-vP-nrt">
+                                <rect key="frame" x="20" y="597" width="335" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.56078431370000004" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="UDM-Pq-U3s"/>
+                                </constraints>
+                                <state key="normal" title="Login with Zalo" image="zalo-logo"/>
+                                <connections>
+                                    <action selector="loginButtonDidTouch:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="lb0-Ha-q1f"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UbP-BE-Hwg">
+                                <rect key="frame" x="99.5" y="192.5" width="176" height="115.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Zalo SDK
+Demo</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.56078431370000004" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="48" name="HelveticaNeue-CondensedBlack"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="XKp-aU-9ql">
+                                <rect key="frame" x="169" y="315" width="37" height="37"/>
+                                <color key="color" red="0.0" green="0.56078431370000004" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="KS1-vP-nrt" secondAttribute="bottom" constant="20" id="4Zm-78-LG1"/>
+                            <constraint firstItem="XKp-aU-9ql" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="6Zm-u8-zV9"/>
+                            <constraint firstItem="UbP-BE-Hwg" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" multiplier="0.75" id="FJu-dv-IzE"/>
+                            <constraint firstAttribute="trailing" secondItem="KS1-vP-nrt" secondAttribute="trailing" constant="20" id="LvF-u1-wMr"/>
+                            <constraint firstItem="KS1-vP-nrt" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="SyF-1T-45u"/>
+                            <constraint firstItem="XKp-aU-9ql" firstAttribute="top" secondItem="UbP-BE-Hwg" secondAttribute="bottom" constant="7" id="YYk-FN-D46"/>
+                            <constraint firstItem="UbP-BE-Hwg" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="b7v-ro-32u"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="SaO-J7-B1k"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="loadingIndicator" destination="XKp-aU-9ql" id="Klr-Pg-7JV"/>
+                        <outlet property="loginButton" destination="KS1-vP-nrt" id="S13-Ma-Pd5"/>
+                        <segue destination="0Ic-Cd-SzZ" kind="custom" identifier="showMainController" customClass="ClearNavigationStackSegue" customModule="ZaloSDK_Demo" customModuleProvider="target" id="Yqw-f7-H98"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="964" y="34.632683658170919"/>
+        </scene>
+        <!--Zalo SDK Demo-->
+        <scene sceneID="ghf-HZ-ZHe">
+            <objects>
+                <tableViewController id="0Ic-Cd-SzZ" customClass="MainViewController" customModule="ZaloSDK_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="O4b-Vg-1r9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection id="AoP-OC-nVQ">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="fTa-p5-bhp">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fTa-p5-bhp" id="bBH-Bp-k6G">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Zqb-1W-IqX">
+                                                    <rect key="frame" x="20" y="5" width="90" height="90"/>
+                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="Zqb-1W-IqX" secondAttribute="height" multiplier="1:1" id="gxP-0E-qvD"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oyK-pB-FJy">
+                                                    <rect key="frame" x="118" y="5" width="237" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="Oqp-pP-TDs"/>
+                                                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="90" id="lT4-nl-PcB"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="tsv-wm-dGt">
+                                                    <rect key="frame" x="178" y="40" width="20" height="20"/>
+                                                    <color key="color" red="0.0" green="0.56078431370000004" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                </activityIndicatorView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="oyK-pB-FJy" firstAttribute="top" secondItem="bBH-Bp-k6G" secondAttribute="top" constant="5" id="3P1-jZ-Y6a"/>
+                                                <constraint firstAttribute="bottom" secondItem="Zqb-1W-IqX" secondAttribute="bottom" constant="5" id="NXx-vj-GoS"/>
+                                                <constraint firstItem="oyK-pB-FJy" firstAttribute="leading" secondItem="Zqb-1W-IqX" secondAttribute="trailing" constant="8" id="TPF-QD-fa9"/>
+                                                <constraint firstItem="Zqb-1W-IqX" firstAttribute="top" secondItem="bBH-Bp-k6G" secondAttribute="top" constant="5" id="kgv-AA-dWh"/>
+                                                <constraint firstItem="Zqb-1W-IqX" firstAttribute="leading" secondItem="bBH-Bp-k6G" secondAttribute="leading" constant="20" id="mVq-nQ-1yM"/>
+                                                <constraint firstAttribute="trailing" secondItem="oyK-pB-FJy" secondAttribute="trailing" constant="20" id="ngi-e7-pQY"/>
+                                                <constraint firstItem="tsv-wm-dGt" firstAttribute="centerX" secondItem="bBH-Bp-k6G" secondAttribute="centerX" id="ppG-HM-89F"/>
+                                                <constraint firstItem="tsv-wm-dGt" firstAttribute="centerY" secondItem="bBH-Bp-k6G" secondAttribute="centerY" id="vK4-8s-Due"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" shouldIndentWhileEditing="NO" rowHeight="60" id="aiD-Yd-1EJ">
+                                        <rect key="frame" x="0.0" y="100" width="375" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aiD-Yd-1EJ" id="POK-SF-Wbd">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fKB-4T-K8n">
+                                                    <rect key="frame" x="20" y="5" width="335" height="50"/>
+                                                    <color key="backgroundColor" red="0.0" green="0.56078431370000004" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <state key="normal" title="Open API Demo"/>
+                                                    <connections>
+                                                        <segue destination="Mli-gG-cjx" kind="show" id="cEb-p6-hfh"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="fKB-4T-K8n" firstAttribute="top" secondItem="POK-SF-Wbd" secondAttribute="top" constant="5" id="2Sg-4K-b5O"/>
+                                                <constraint firstAttribute="trailing" secondItem="fKB-4T-K8n" secondAttribute="trailing" constant="20" id="3tJ-S0-HoN"/>
+                                                <constraint firstItem="fKB-4T-K8n" firstAttribute="leading" secondItem="POK-SF-Wbd" secondAttribute="leading" constant="20" id="I2m-Ed-ObM"/>
+                                                <constraint firstAttribute="bottom" secondItem="fKB-4T-K8n" secondAttribute="bottom" constant="5" id="uZR-1A-wZL"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" shouldIndentWhileEditing="NO" rowHeight="60" id="xWD-5y-cEc">
+                                        <rect key="frame" x="0.0" y="160" width="375" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xWD-5y-cEc" id="Qmb-IP-l2m">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rRe-hG-jYZ">
+                                                    <rect key="frame" x="20" y="5" width="335" height="50"/>
+                                                    <color key="backgroundColor" red="0.0" green="0.56078431370000004" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <state key="normal" title="Logout"/>
+                                                    <connections>
+                                                        <action selector="logoutButtonDidTouch:" destination="0Ic-Cd-SzZ" eventType="touchUpInside" id="ciF-In-AOG"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="rRe-hG-jYZ" firstAttribute="leading" secondItem="Qmb-IP-l2m" secondAttribute="leading" constant="20" id="FTd-6k-GTU"/>
+                                                <constraint firstAttribute="bottom" secondItem="rRe-hG-jYZ" secondAttribute="bottom" constant="5" id="W69-Hh-W0n"/>
+                                                <constraint firstAttribute="trailing" secondItem="rRe-hG-jYZ" secondAttribute="trailing" constant="20" id="ay5-mM-L9b"/>
+                                                <constraint firstItem="rRe-hG-jYZ" firstAttribute="top" secondItem="Qmb-IP-l2m" secondAttribute="top" constant="5" id="cWS-Bn-sKG"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="0Ic-Cd-SzZ" id="4Jf-ds-qg7"/>
+                            <outlet property="delegate" destination="0Ic-Cd-SzZ" id="cl5-gU-4Ib"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Zalo SDK Demo" id="0Ce-kZ-FHE"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="profileImageView" destination="Zqb-1W-IqX" id="GNZ-cZ-fi0"/>
+                        <outlet property="profileLabel" destination="oyK-pB-FJy" id="0sV-9a-gOg"/>
+                        <outlet property="profileLoadingIndicator" destination="tsv-wm-dGt" id="RpG-7P-YgM"/>
+                        <segue destination="vXZ-lx-hvc" kind="custom" identifier="showLoginController" customClass="ClearNavigationStackSegue" customModule="ZaloSDK_Demo" customModuleProvider="target" id="diE-EB-IIo"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b7Y-hb-hKc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1712.8" y="34.632683658170919"/>
+        </scene>
+        <!--Open API Demo-->
+        <scene sceneID="OC8-KC-kGH">
+            <objects>
+                <viewController id="Mli-gG-cjx" customClass="OpenAPIDemoViewController" customModule="ZaloSDK_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BYn-cy-5Oj"/>
+                        <viewControllerLayoutGuide type="bottom" id="bji-O5-cnv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="55Q-YW-gpi">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Open API Demo" id="YYU-kJ-8v3"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BCi-2h-w09" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="305" y="433"/>
+            <point key="canvasLocation" x="2414" y="35"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="uNd-cr-cH0">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AfH-ap-c8M" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hXl-A2-2bf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="Ggg-ra-AbG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ovu-9t-RbX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="145" y="35"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="zalo-logo" width="36" height="36"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="diE-EB-IIo"/>
+    </inferredMetricsTieBreakers>
 </document>

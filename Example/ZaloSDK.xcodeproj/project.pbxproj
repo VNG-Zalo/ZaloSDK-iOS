@@ -7,49 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B21E8B928F8B417201DE497 /* Pods_ZaloSDK_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8579471D8DF1C1DCF042AF12 /* Pods_ZaloSDK_Demo.framework */; };
 		50BBBFEE1BC9569961DD5DA5 /* Pods_ZaloSDK_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C89F74A08D2AD461E4FC17F8 /* Pods_ZaloSDK_Tests.framework */; };
-		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
-		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
-		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
-		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
-		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
-		6003F59E195388D20070C39A /* ZDKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* ZDKAppDelegate.m */; };
-		6003F5A7195388D20070C39A /* ZDKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* ZDKViewController.m */; };
-		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
-		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
-		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		BAAD4911532EE4B4B547E486 /* Pods_ZaloSDK_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 009DFB013F7DB6FE6B395CBF /* Pods_ZaloSDK_Example.framework */; };
+		65A9A8A11F7E409800D23D33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A9A8981F7E409800D23D33 /* AppDelegate.swift */; };
+		65A9A8A21F7E409800D23D33 /* ButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A9A8991F7E409800D23D33 /* ButtonCell.swift */; };
+		65A9A8A31F7E409800D23D33 /* ButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65A9A89A1F7E409800D23D33 /* ButtonCell.xib */; };
+		65A9A8A41F7E409800D23D33 /* ClearNavigationStackSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A9A89B1F7E409800D23D33 /* ClearNavigationStackSegue.swift */; };
+		65A9A8A61F7E409800D23D33 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A9A89D1F7E409800D23D33 /* LoginViewController.swift */; };
+		65A9A8A71F7E409800D23D33 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A9A89E1F7E409800D23D33 /* MainViewController.swift */; };
+		65A9A8A81F7E409800D23D33 /* OpenAPIDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A9A89F1F7E409800D23D33 /* OpenAPIDemoViewController.swift */; };
+		65A9A8AD1F7E417900D23D33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		65A9A8B01F7E418C00D23D33 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65A9A8AA1F7E40A300D23D33 /* LaunchScreen.xib */; };
+		65A9A8B21F7E41A000D23D33 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		6003F5B3195388D20070C39A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6003F582195388D10070C39A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6003F589195388D20070C39A;
-			remoteInfo = ZaloSDK;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		009DFB013F7DB6FE6B395CBF /* Pods_ZaloSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZaloSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6003F58A195388D20070C39A /* ZaloSDK_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZaloSDK_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		241881905B8380896A4583CB /* Pods-ZaloSDK_Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZaloSDK_Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZaloSDK_Demo/Pods-ZaloSDK_Demo.debug.xcconfig"; sourceTree = "<group>"; };
+		3A4B9660FB033E6FAB40EF24 /* Pods-ZaloSDK_Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZaloSDK_Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZaloSDK_Demo/Pods-ZaloSDK_Demo.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		6003F591195388D20070C39A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		6003F595195388D20070C39A /* ZaloSDK-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ZaloSDK-Info.plist"; sourceTree = "<group>"; };
-		6003F597195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		6003F599195388D20070C39A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		6003F59B195388D20070C39A /* ZaloSDK-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZaloSDK-Prefix.pch"; sourceTree = "<group>"; };
-		6003F59C195388D20070C39A /* ZDKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZDKAppDelegate.h; sourceTree = "<group>"; };
-		6003F59D195388D20070C39A /* ZDKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZDKAppDelegate.m; sourceTree = "<group>"; };
-		6003F5A5195388D20070C39A /* ZDKViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZDKViewController.h; sourceTree = "<group>"; };
-		6003F5A6195388D20070C39A /* ZDKViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZDKViewController.m; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6003F5AE195388D20070C39A /* ZaloSDK_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZaloSDK_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -57,10 +40,20 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
+		65A9A8861F7E404C00D23D33 /* ZaloSDK_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZaloSDK_Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		65A9A8981F7E409800D23D33 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		65A9A8991F7E409800D23D33 /* ButtonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonCell.swift; sourceTree = "<group>"; };
+		65A9A89A1F7E409800D23D33 /* ButtonCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ButtonCell.xib; sourceTree = "<group>"; };
+		65A9A89B1F7E409800D23D33 /* ClearNavigationStackSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClearNavigationStackSegue.swift; sourceTree = "<group>"; };
+		65A9A89C1F7E409800D23D33 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65A9A89D1F7E409800D23D33 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		65A9A89E1F7E409800D23D33 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		65A9A89F1F7E409800D23D33 /* OpenAPIDemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenAPIDemoViewController.swift; sourceTree = "<group>"; };
+		65A9A8AB1F7E40A300D23D33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		6B94FF9BA65B386EC6D34BAE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		6F4C53480ED0B9A62001B789 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		79D1160A1894E2E0BBFB1961 /* Pods-ZaloSDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZaloSDK_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZaloSDK_Tests/Pods-ZaloSDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		8579471D8DF1C1DCF042AF12 /* Pods_ZaloSDK_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZaloSDK_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		996FBBD3F767F6D6CB5DE7CC /* Pods-ZaloSDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZaloSDK_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZaloSDK_Tests/Pods-ZaloSDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		A8E955AC0C7A50B6CCE2CA42 /* Pods-ZaloSDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZaloSDK_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZaloSDK_Example/Pods-ZaloSDK_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -70,17 +63,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		6003F587195388D20070C39A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
-				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
-				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				BAAD4911532EE4B4B547E486 /* Pods_ZaloSDK_Example.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		6003F5AB195388D20070C39A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -89,6 +71,14 @@
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
 				50BBBFEE1BC9569961DD5DA5 /* Pods_ZaloSDK_Tests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65A9A8831F7E404C00D23D33 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B21E8B928F8B417201DE497 /* Pods_ZaloSDK_Demo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +92,8 @@
 				A8E955AC0C7A50B6CCE2CA42 /* Pods-ZaloSDK_Example.release.xcconfig */,
 				79D1160A1894E2E0BBFB1961 /* Pods-ZaloSDK_Tests.debug.xcconfig */,
 				996FBBD3F767F6D6CB5DE7CC /* Pods-ZaloSDK_Tests.release.xcconfig */,
+				241881905B8380896A4583CB /* Pods-ZaloSDK_Demo.debug.xcconfig */,
+				3A4B9660FB033E6FAB40EF24 /* Pods-ZaloSDK_Demo.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -121,8 +113,8 @@
 		6003F58B195388D20070C39A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6003F58A195388D20070C39A /* ZaloSDK_Example.app */,
 				6003F5AE195388D20070C39A /* ZaloSDK_Tests.xctest */,
+				65A9A8861F7E404C00D23D33 /* ZaloSDK_Demo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -136,6 +128,7 @@
 				6003F5AF195388D20070C39A /* XCTest.framework */,
 				009DFB013F7DB6FE6B395CBF /* Pods_ZaloSDK_Example.framework */,
 				C89F74A08D2AD461E4FC17F8 /* Pods_ZaloSDK_Tests.framework */,
+				8579471D8DF1C1DCF042AF12 /* Pods_ZaloSDK_Demo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -143,12 +136,15 @@
 		6003F593195388D20070C39A /* Example for ZaloSDK */ = {
 			isa = PBXGroup;
 			children = (
-				6003F59C195388D20070C39A /* ZDKAppDelegate.h */,
-				6003F59D195388D20070C39A /* ZDKAppDelegate.m */,
+				65A9A8981F7E409800D23D33 /* AppDelegate.swift */,
+				65A9A8991F7E409800D23D33 /* ButtonCell.swift */,
+				65A9A89A1F7E409800D23D33 /* ButtonCell.xib */,
+				65A9A89B1F7E409800D23D33 /* ClearNavigationStackSegue.swift */,
+				65A9A89D1F7E409800D23D33 /* LoginViewController.swift */,
+				65A9A89E1F7E409800D23D33 /* MainViewController.swift */,
+				65A9A89F1F7E409800D23D33 /* OpenAPIDemoViewController.swift */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
-				6003F5A5195388D20070C39A /* ZDKViewController.h */,
-				6003F5A6195388D20070C39A /* ZDKViewController.m */,
-				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
+				65A9A8AA1F7E40A300D23D33 /* LaunchScreen.xib */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
@@ -159,10 +155,7 @@
 		6003F594195388D20070C39A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				6003F595195388D20070C39A /* ZaloSDK-Info.plist */,
-				6003F596195388D20070C39A /* InfoPlist.strings */,
-				6003F599195388D20070C39A /* main.m */,
-				6003F59B195388D20070C39A /* ZaloSDK-Prefix.pch */,
+				65A9A89C1F7E409800D23D33 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -199,26 +192,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6003F589195388D20070C39A /* ZaloSDK_Example */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "ZaloSDK_Example" */;
-			buildPhases = (
-				6F2BA62250E12145B5A3E349 /* [CP] Check Pods Manifest.lock */,
-				6003F586195388D20070C39A /* Sources */,
-				6003F587195388D20070C39A /* Frameworks */,
-				6003F588195388D20070C39A /* Resources */,
-				47D232CC0017659CD8382D9C /* [CP] Embed Pods Frameworks */,
-				AE103757677B63B87B4BABC0 /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = ZaloSDK_Example;
-			productName = ZaloSDK;
-			productReference = 6003F58A195388D20070C39A /* ZaloSDK_Example.app */;
-			productType = "com.apple.product-type.application";
-		};
 		6003F5AD195388D20070C39A /* ZaloSDK_Tests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "ZaloSDK_Tests" */;
@@ -233,12 +206,31 @@
 			buildRules = (
 			);
 			dependencies = (
-				6003F5B4195388D20070C39A /* PBXTargetDependency */,
 			);
 			name = ZaloSDK_Tests;
 			productName = ZaloSDKTests;
 			productReference = 6003F5AE195388D20070C39A /* ZaloSDK_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		65A9A8851F7E404C00D23D33 /* ZaloSDK_Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65A9A8951F7E404C00D23D33 /* Build configuration list for PBXNativeTarget "ZaloSDK_Demo" */;
+			buildPhases = (
+				49C89D661BB1DBF69143779A /* [CP] Check Pods Manifest.lock */,
+				65A9A8821F7E404C00D23D33 /* Sources */,
+				65A9A8831F7E404C00D23D33 /* Frameworks */,
+				65A9A8841F7E404C00D23D33 /* Resources */,
+				BEE2B2B35B56F50AD36117D5 /* [CP] Embed Pods Frameworks */,
+				1546882F12963D71A3B6E895 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZaloSDK_Demo;
+			productName = ZaloSDK;
+			productReference = 65A9A8861F7E404C00D23D33 /* ZaloSDK_Demo.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
@@ -247,11 +239,17 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = ZDK;
+				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "acct<blob>=<NULL>";
 				TargetAttributes = {
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
+					};
+					65A9A8851F7E404C00D23D33 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 2L644Y8ZFY;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -268,24 +266,13 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6003F589195388D20070C39A /* ZaloSDK_Example */,
 				6003F5AD195388D20070C39A /* ZaloSDK_Tests */,
+				65A9A8851F7E404C00D23D33 /* ZaloSDK_Demo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		6003F588195388D20070C39A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
-				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
-				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
-				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		6003F5AC195388D20070C39A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -294,9 +281,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		65A9A8841F7E404C00D23D33 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65A9A8B01F7E418C00D23D33 /* LaunchScreen.xib in Resources */,
+				65A9A8B21F7E41A000D23D33 /* Images.xcassets in Resources */,
+				65A9A8A31F7E409800D23D33 /* ButtonCell.xib in Resources */,
+				65A9A8AD1F7E417900D23D33 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1546882F12963D71A3B6E895 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZaloSDK_Demo/Pods-ZaloSDK_Demo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		18E530BE6532877975C0DAAD /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -327,22 +340,22 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZaloSDK_Tests/Pods-ZaloSDK_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		47D232CC0017659CD8382D9C /* [CP] Embed Pods Frameworks */ = {
+		49C89D661BB1DBF69143779A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-ZaloSDK_Example/Pods-ZaloSDK_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/ZaloSDK/ZaloSDK.framework",
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZaloSDK.framework",
+				"$(DERIVED_FILE_DIR)/Pods-ZaloSDK_Demo-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZaloSDK_Example/Pods-ZaloSDK_Example-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		69B1B6C127E64C8B60CD49B2 /* [CP] Check Pods Manifest.lock */ = {
@@ -363,52 +376,31 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6F2BA62250E12145B5A3E349 /* [CP] Check Pods Manifest.lock */ = {
+		BEE2B2B35B56F50AD36117D5 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
+				"${SRCROOT}/Pods/Target Support Files/Pods-ZaloSDK_Demo/Pods-ZaloSDK_Demo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
 			);
-			name = "[CP] Check Pods Manifest.lock";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ZaloSDK_Example-checkManifestLockResult.txt",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AE103757677B63B87B4BABC0 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZaloSDK_Example/Pods-ZaloSDK_Example-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZaloSDK_Demo/Pods-ZaloSDK_Demo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		6003F586195388D20070C39A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6003F59E195388D20070C39A /* ZDKAppDelegate.m in Sources */,
-				6003F5A7195388D20070C39A /* ZDKViewController.m in Sources */,
-				6003F59A195388D20070C39A /* main.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		6003F5AA195388D20070C39A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -417,25 +409,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		65A9A8821F7E404C00D23D33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65A9A8A71F7E409800D23D33 /* MainViewController.swift in Sources */,
+				65A9A8A61F7E409800D23D33 /* LoginViewController.swift in Sources */,
+				65A9A8A81F7E409800D23D33 /* OpenAPIDemoViewController.swift in Sources */,
+				65A9A8A11F7E409800D23D33 /* AppDelegate.swift in Sources */,
+				65A9A8A41F7E409800D23D33 /* ClearNavigationStackSegue.swift in Sources */,
+				65A9A8A21F7E409800D23D33 /* ButtonCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		6003F5B4195388D20070C39A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 6003F589195388D20070C39A /* ZaloSDK_Example */;
-			targetProxy = 6003F5B3195388D20070C39A /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
-		6003F596195388D20070C39A /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6003F597195388D20070C39A /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 		6003F5B8195388D20070C39A /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -444,12 +433,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */ = {
+		65A9A8AA1F7E40A300D23D33 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				71719F9E1E33DC2100824A3D /* Base */,
+				65A9A8AB1F7E40A300D23D33 /* Base */,
 			);
-			name = LaunchScreen.storyboard;
+			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -528,36 +517,6 @@
 			};
 			name = Release;
 		};
-		6003F5C0195388D20070C39A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CF3B34AE7F40A392DDA9A66B /* Pods-ZaloSDK_Example.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ZaloSDK/ZaloSDK-Prefix.pch";
-				INFOPLIST_FILE = "ZaloSDK/ZaloSDK-Info.plist";
-				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		6003F5C1195388D20070C39A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A8E955AC0C7A50B6CCE2CA42 /* Pods-ZaloSDK_Example.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ZaloSDK/ZaloSDK-Prefix.pch";
-				INFOPLIST_FILE = "ZaloSDK/ZaloSDK-Info.plist";
-				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
 		6003F5C3195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 79D1160A1894E2E0BBFB1961 /* Pods-ZaloSDK_Tests.debug.xcconfig */;
@@ -602,6 +561,60 @@
 			};
 			name = Release;
 		};
+		65A9A8961F7E404C00D23D33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 241881905B8380896A4583CB /* Pods-ZaloSDK_Demo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 2L644Y8ZFY;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = ZaloSDK/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vng.zalo.ZaloSDKDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		65A9A8971F7E404C00D23D33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A4B9660FB033E6FAB40EF24 /* Pods-ZaloSDK_Demo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 2L644Y8ZFY;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = ZaloSDK/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vng.zalo.ZaloSDKDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -614,20 +627,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "ZaloSDK_Example" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6003F5C0195388D20070C39A /* Debug */,
-				6003F5C1195388D20070C39A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "ZaloSDK_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6003F5C3195388D20070C39A /* Debug */,
 				6003F5C4195388D20070C39A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65A9A8951F7E404C00D23D33 /* Build configuration list for PBXNativeTarget "ZaloSDK_Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65A9A8961F7E404C00D23D33 /* Debug */,
+				65A9A8971F7E404C00D23D33 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
