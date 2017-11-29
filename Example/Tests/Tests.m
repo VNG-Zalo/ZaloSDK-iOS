@@ -2,8 +2,8 @@
 //  ZaloSDKTests.m
 //  ZaloSDKTests
 //
-//  Created by acct<blob>=<NULL> on 09/28/2017.
-//  Copyright (c) 2017 acct<blob>=<NULL>. All rights reserved.
+//  Created by Liem Vo on 09/28/2017.
+//  Copyright (c) 2017 VNG. All rights reserved.
 //
 
 @import XCTest;

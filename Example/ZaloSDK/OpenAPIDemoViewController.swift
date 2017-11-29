@@ -3,7 +3,7 @@
 //  ZaloSDKFramework
 //
 //  Created by Liem Vo on 9/27/17.
-//  Copyright © 2017 CocoaPods. All rights reserved.
+//  Copyright © 2017 VNG. All rights reserved.
 //
 
 import Eureka
