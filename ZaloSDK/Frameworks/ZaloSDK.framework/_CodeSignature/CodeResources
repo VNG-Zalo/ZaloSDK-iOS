@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/ZDK.h</key>
 		<data>
-		aUyO4On74683wDAEoqIEcuzvJTE=
+		Hr2s7B8vXWcAhOBUAjWnOQELjzs=
 		</data>
 		<key>Headers/ZDKConfig.h</key>
 		<data>
@@ -58,11 +58,11 @@
 		</data>
 		<key>Headers/ZaloSDKDefine.h</key>
 		<data>
-		r5oM+apXUugcSsTfhX40AtdP4E8=
+		mnCL/fW+AQlC09pp7GhrcenqfKA=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		La3CXIvw4zzWZpVydeSEZSLIUI8=
+		nsvAinGkvWAQ4dg8ra1HphpzwNY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -75,11 +75,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			aUyO4On74683wDAEoqIEcuzvJTE=
+			Hr2s7B8vXWcAhOBUAjWnOQELjzs=
 			</data>
 			<key>hash2</key>
 			<data>
-			Jt0owixMnu8E0wB4i8zn3Yy0Oj3UqeWU/qwFMaw2q4M=
+			rBprVRMBAbHEWXbVng1PSawBVT0lpdg6KkT/OECHorU=
 			</data>
 		</dict>
 		<key>Headers/ZDKConfig.h</key>
@@ -218,11 +218,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			r5oM+apXUugcSsTfhX40AtdP4E8=
+			mnCL/fW+AQlC09pp7GhrcenqfKA=
 			</data>
 			<key>hash2</key>
 			<data>
-			qFtjEt/MnIVVB7xfSR8iKnzQWR9dJs+ciiYpWRNQDig=
+			yWPeK9YR7YthNy0Vtn7dkUiYGymsz72bsC93YlIMURo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

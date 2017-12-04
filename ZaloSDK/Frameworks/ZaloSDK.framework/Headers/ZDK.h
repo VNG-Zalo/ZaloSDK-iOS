@@ -172,7 +172,7 @@ typedef void (^ZOGraphCallback)(ZOGraphResponseObject* response);
 /**
  Send message onbehave of offical account
  */
-- (void) sendOfficalAccountMessageWith: (NSString *) template templateData:(NSDictionary *) templateData callback:(ZOGraphCallback) callback;
+- (void) sendOfficalAccountMessageWith: (NSString *) templateName templateData:(NSDictionary *) templateData callback:(ZOGraphCallback) callback;
 
 /**
  Send graph api request with specific path and param

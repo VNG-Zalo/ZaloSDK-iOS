@@ -27,6 +27,7 @@
 #define IS_IOS_7_AND_LOWER() (kCFCoreFoundationVersionNumber < kCFCoreFoundationVersionNumber_iOS_7_0)
 #define IS_IOS_8_AND_LOWER() (kCFCoreFoundationVersionNumber <= kCFCoreFoundationVersionNumber_iOS_8_0)
 #define IS_IOS_8_AND_GREATER() (kCFCoreFoundationVersionNumber >= kCFCoreFoundationVersionNumber_iOS_8_0)
+#define IS_IOS_9_AND_GREATER() (kCFCoreFoundationVersionNumber >= kCFCoreFoundationVersionNumber_iOS_9_0)
 
 
 
