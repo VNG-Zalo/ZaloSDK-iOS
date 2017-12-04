@@ -3,7 +3,7 @@
 //  EmeraldAdmin
 //
 //  Created by Liem Vo on 7/26/17.
-//  Copyright © 2017 Celadon. All rights reserved.
+//  Copyright © 2017 VNG. All rights reserved.
 //
 
 import UIKit

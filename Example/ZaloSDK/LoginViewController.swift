@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  ZaloSDKFramework
 //
-//  Created by acct<blob>=<NULL> on 09/26/2017.
-//  Copyright (c) 2017 acct<blob>=<NULL>. All rights reserved.
+//  Created by Liem Vo on 9/27/17.
+//  Copyright (c) 2017 VNG. All rights reserved.
 //
 
 import UIKit
