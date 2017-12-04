@@ -22,7 +22,7 @@ class OpenAPIDemoViewController : FormViewController {
         self.navigationController?.navigationBar.isHidden = false
     }
     
-    func onSelectAPIDemo(sender: UIButton) {
+    @objc func onSelectAPIDemo(sender: UIButton) {
         let api = ds.apis[sender.tag]
         let controller = OpenAPIExectueViewController()
         controller.api = api
@@ -61,7 +61,7 @@ class OpenAPIExectueViewController: FormViewController {
         buildForm()
     }
     
-    func execute() {
+    @objc func execute() {
         self.showResultText("loading...")
         UIApplication.shared.isNetworkActivityIndicatorVisible = true
         api.exectuor.execute(params: form.values()) {[weak self] (response) in
