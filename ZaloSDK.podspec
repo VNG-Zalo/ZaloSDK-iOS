@@ -2,12 +2,12 @@
 # Be sure to run `pod spec lint ZaloSDK.podspec' to ensure this is a
 # valid spec before submitting.
 # pod lib lint
-#
+# pod trunk push ZaloSDK.podspec
 #
 
 Pod::Spec.new do |s|
 s.name             = 'ZaloSDK'
-s.version          = '2.2.1204'
+s.version          = '2.2.1228'
 s.summary          = 'Zalo SDK'
 
 s.description      = <<-DESC
