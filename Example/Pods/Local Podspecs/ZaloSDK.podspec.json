@@ -1,6 +1,6 @@
 {
   "name": "ZaloSDK",
-  "version": "2.2.0928",
+  "version": "2.3.0710",
   "summary": "Zalo SDK",
   "description": "Zalo software development kit for iOS\nDocument: http://developers.zalo.me/docs/sdk/ios-sdk-9",
   "homepage": "http://developers.zalo.me/docs/sdk/ios-sdk-9",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/VNG-Zalo/ZaloSDK-iOS.git",
-    "tag": "2.2.0928"
+    "tag": "2.3.0710"
   },
   "platforms": {
     "ios": "8.0"
