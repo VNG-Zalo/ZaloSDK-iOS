@@ -203,8 +203,6 @@
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
-				30355EF8191C6BE182DE9A32 /* [CP] Embed Pods Frameworks */,
-				18E530BE6532877975C0DAAD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -224,7 +222,6 @@
 				65A9A8831F7E404C00D23D33 /* Frameworks */,
 				65A9A8841F7E404C00D23D33 /* Resources */,
 				BEE2B2B35B56F50AD36117D5 /* [CP] Embed Pods Frameworks */,
-				1546882F12963D71A3B6E895 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -299,51 +296,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1546882F12963D71A3B6E895 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZaloSDK_Demo/Pods-ZaloSDK_Demo-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		18E530BE6532877975C0DAAD /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZaloSDK_Tests/Pods-ZaloSDK_Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		30355EF8191C6BE182DE9A32 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZaloSDK_Tests/Pods-ZaloSDK_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		49C89D661BB1DBF69143779A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

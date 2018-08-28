@@ -3,7 +3,7 @@ use_frameworks!
 target 'ZaloSDK_Demo' do
   pod 'ZaloSDK', :path => '../'
   pod 'AlamofireImage', '~> 3.3'
-  pod 'Eureka', '~> 4.0'
+  pod 'Eureka', '~> 4.2'
   
   target 'ZaloSDK_Tests' do
     inherit! :search_paths
