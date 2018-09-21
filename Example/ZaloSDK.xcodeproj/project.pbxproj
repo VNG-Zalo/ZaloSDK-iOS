@@ -61,7 +61,7 @@
 		A8E955AC0C7A50B6CCE2CA42 /* Pods-ZaloSDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZaloSDK_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZaloSDK_Example/Pods-ZaloSDK_Example.release.xcconfig"; sourceTree = "<group>"; };
 		C89F74A08D2AD461E4FC17F8 /* Pods_ZaloSDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZaloSDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF3B34AE7F40A392DDA9A66B /* Pods-ZaloSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZaloSDK_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZaloSDK_Example/Pods-ZaloSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		FE1A9DABB9A28D4F3909745F /* ZaloSDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = ZaloSDK.podspec; path = ../ZaloSDK.podspec; sourceTree = "<group>"; };
+		FE1A9DABB9A28D4F3909745F /* ZaloSDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = ZaloSDK.podspec; path = ../ZaloSDK.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
