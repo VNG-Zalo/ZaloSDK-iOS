@@ -199,9 +199,9 @@ typedef void (^ZOGraphCallback)(ZOGraphResponseObject* response);
            callback:(void(^)(ZOShareResponseObject * response))callback;
 
 
-- (void)share:(ZOFeed *)feed
- inController:(UIViewController *)controller
-     callback:(void(^)(ZOShareResponseObject * response))callback;
+- (void)shareFeedOrSendMessage:(ZOFeed *)feedOrMessage
+                  inController:(UIViewController *)controller
+                      callback:(void(^)(ZOShareResponseObject * response))callback;
 
 
 //This method is used to config sharing zalo using app or web
