@@ -1,4 +1,9 @@
 ===========================
+2.3.0921.1
+===========================
+- Fix method [ZDK share:inController:callback:] conflict in swift
+
+===========================
 2.3.0921
 ===========================
 - Update register Zalo flow
