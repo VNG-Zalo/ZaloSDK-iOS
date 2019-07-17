@@ -182,7 +182,7 @@ class GetInvitableFriendListExecutor : OpenAPIExecutor {
 class PostFeedExecutor : OpenAPIExecutor {
     static let Params: [OpenAPIParam] = [
         (key: "message", defaultValue: "Zalo Developer"),
-        (key: "link", defaultValue: "http://developers.zalo.me/")
+        (key: "link", defaultValue: "http://developers.zaloapp.com/")
     ]
     func execute(params: [String : Any?], callback: @escaping ZOGraphCallback) {
         let message = params["message"] as? String ?? ""
@@ -195,7 +195,7 @@ class SendMessageExecutor : OpenAPIExecutor {
     static let Params: [OpenAPIParam] = [
         (key: "to", defaultValue: ""),
         (key: "message", defaultValue: "Zalo Developer"),
-        (key: "link", defaultValue: "http://developers.zalo.me/")
+        (key: "link", defaultValue: "http://developers.zaloapp.com/")
     ]
     func execute(params: [String : Any?], callback: @escaping ZOGraphCallback) {
         let to = params["to"] as? String ?? ""

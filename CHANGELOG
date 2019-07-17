@@ -1,4 +1,16 @@
 ===========================
+2.4.0717
+===========================
+- Add SettingManager
+- Add option to login webview if not login in zalo app
+- Change domain zalo.me -> zaloapp.com
+
+===========================
+2.4.0619
+===========================
+- Fix memory leak khi share feed
+
+===========================
 2.3.0921.1
 ===========================
 - Fix method [ZDK share:inController:callback:] conflict in swift
