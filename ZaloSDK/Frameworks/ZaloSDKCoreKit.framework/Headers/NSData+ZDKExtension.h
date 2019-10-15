@@ -17,5 +17,7 @@
 - (NSData *)zdkAES256EncryptWithKey:(NSString *)key;
 - (NSData *)zdkAES256DecryptWithKey:(NSString *)key;
 + (NSData *)AES128EncryptData:(NSData *) data withKey:(NSString *)key;
-
+- (NSData *) zdkAES128ECBDecryptWithKey:(NSData *)keyData;
+- (NSData *) zdkGzipInflate;
+- (NSData *) zdkGzipDeflate;
 @end

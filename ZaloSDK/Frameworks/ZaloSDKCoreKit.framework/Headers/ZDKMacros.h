@@ -67,6 +67,8 @@ _Pragma("clang diagnostic pop") \
 #define DOUBLE_VALUE(obj) ([obj respondsToSelector:@selector(doubleValue)] ? [obj doubleValue] : 0.0)
 #define INT_VALUE(obj) ([obj respondsToSelector:@selector(intValue)] ? [obj intValue] : 0)
 #define BOOL_VALUE(obj) ([obj respondsToSelector:@selector(boolValue)] ? [obj boolValue] : false)
+#define STRING_VALUE(obj) ([obj isKindOfClass:[NSString class]] ? obj : nil)
 #define DICT_VALUE(obj) ([obj isKindOfClass:[NSDictionary class]] ? obj : nil)
+#define ARRAY_VALUE(obj) ([obj isKindOfClass:[NSArray class]] ? obj : nil)
 
 #endif /* ZDKMacros_h */

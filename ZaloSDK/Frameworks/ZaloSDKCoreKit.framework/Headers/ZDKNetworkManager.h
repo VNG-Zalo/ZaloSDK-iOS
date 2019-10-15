@@ -16,6 +16,6 @@ typedef void (^ZDKNetworkManagerCallBack)(NSData* _Nullable data, NSURLResponse*
 + (id _Nullable) sendAsynchronousRequest:(NSURLRequest* _Nonnull) request
                                            completionHandler:(ZDKNetworkManagerCallBack _Nullable) handler;
 + (NSData * _Nullable) sendSynchronousRequest:(NSURLRequest * _Nonnull)request
-                   returningResponse:(__autoreleasing NSURLResponse ** _Nullable)responsePtr
-                               error:(__autoreleasing NSError ** _Nullable)errorPtr;
+                            returningResponse:(__autoreleasing NSURLResponse *_Nullable* _Nullable)responsePtr
+                                        error:(__autoreleasing NSError *_Nonnull* _Nullable)errorPtr;
 @end

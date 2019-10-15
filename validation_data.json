@@ -1,0 +1,88 @@
+{
+  "independentSegments" : false,
+  "playlistKind" : "master",
+  "gzipEncoded" : true,
+  "dataID" : 0,
+  "messages" : [
+    {
+      "errorParserCode" : -12274,
+      "errorComment" : "PROGRAM-ID has been deprecated and is no longer a valid attribute for #EXT-X-STREAM-INF",
+      "errorDomain" : "CoreMediaErrorDomain",
+      "errorRequirementLevel" : 2,
+      "errorParserLine" : "#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=1600000,RESOLUTION=854x480,NAME=\"480p\""
+    },
+    {
+      "errorParserCode" : -12274,
+      "errorComment" : "Invalid attribute for #EXT-X-STREAM-INF",
+      "errorDomain" : "CoreMediaErrorDomain",
+      "errorRequirementLevel" : 2,
+      "errorParserLine" : "#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=1600000,RESOLUTION=854x480,NAME=\"480p\""
+    }
+  ],
+  "validatorVersion" : "1.2(180612)",
+  "validatorTimestamp" : "2019-08-12T11:29:52+07:00",
+  "sslHosts" : {
+    "https:\/\/vnso-qt-3-tf-zle-mplaylist.zadn.vn" : {
+      "sslNegotiatedProtocolVersion" : 8,
+      "sslNegotiatedCipher" : 49199,
+      "sslRSAKeySizeInBits" : 2048
+    },
+    "https:\/\/vnso-qt-3-tf-zle-playlist.zadn.vn" : {
+      "sslNegotiatedProtocolVersion" : 8,
+      "sslNegotiatedCipher" : 49199,
+      "sslRSAKeySizeInBits" : 2048
+    }
+  },
+  "sslContentDeliveredSecurely" : true,
+  "url" : "https:\/\/vnso-qt-3-tf-zle-mplaylist.zadn.vn\/8-lC47LZq5k\/hls\/0\/a0b0f672ca3723697a26\/index.m3u8",
+  "variants" : [
+    {
+      "processedSegmentsCount" : 0,
+      "url" : "\/\/vnso-qt-3-tf-zle-playlist.zadn.vn\/IDf_whJZ-ko\/hls\/0\/3\/a0b0f672ca3723697a26\/480p.m3u8",
+      "hasDiscSequenceTag" : false,
+      "messages" : [
+        {
+          "errorParserCode" : -12273,
+          "errorComment" : "Max extinf duration of 10.006 more than 2 * target duration 5",
+          "errorDomain" : "CoreMediaErrorDomain",
+          "errorStatusCode" : -12642,
+          "errorRequirementLevel" : 1
+        }
+      ],
+      "integerDurations" : true,
+      "measuredMeanBitrate" : 0,
+      "parsedSegmentsCount" : 0,
+      "hasEndTag" : false,
+      "playlistResolutionHeight" : 480,
+      "parseFailed" : true,
+      "measuredMaxBitrate" : 0,
+      "independentSegments" : false,
+      "audioGroup" : {
+        "playlistGroupID" : "AUDIO",
+        "renditions" : [
+          {
+            "persistentID" : 1
+          }
+        ]
+      },
+      "closedCaptionGroup" : {
+        "playlistGroupID" : "CC",
+        "renditions" : [
+          {
+            "persistentID" : 0
+          }
+        ]
+      },
+      "iframeOnly" : false,
+      "playlistKind" : "media",
+      "playlistMaxBitrate" : 1600000,
+      "sslContentDeliveredSecurely" : true,
+      "playlistResolutionWidth" : 854,
+      "playlistTargetDuration" : 0,
+      "videoRangeKey" : "Unknown",
+      "gzipEncoded" : true,
+      "dataID" : 2
+    }
+  ],
+  "dataVersion" : 1.1000000000000001
+}
