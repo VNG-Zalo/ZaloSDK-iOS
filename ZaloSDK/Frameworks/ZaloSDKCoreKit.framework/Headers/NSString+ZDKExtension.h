@@ -14,6 +14,7 @@
 - (NSString *)zdkEncodeURLString;
 - (NSString *)zdkDecodedURLString;
 - (NSString *)zdkMd5;
+- (NSData *)zdkMd5Data;
 - (NSString *)zdkSha1;
 - (NSString *)zdkRemovePercentEncoding;
 - (BOOL)zdkContainsString:(NSString *)str;
@@ -37,4 +38,5 @@
 + (NSString *) zdkAES128DecryptString:(NSString *) str withKey:(NSString *)key;
 + (NSString *) zdkSigForParams: (NSDictionary *) params serectKey: (NSString *) serectKey;
 
+- (NSData *)zdkHexToData;
 @end
