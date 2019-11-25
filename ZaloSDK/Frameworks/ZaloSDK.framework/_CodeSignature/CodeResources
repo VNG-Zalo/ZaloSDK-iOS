@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/ZDK.h</key>
 		<data>
-		RwEruJTof3YgoiR9RTxV7477k9Q=
+		z7G1Zz8XRHnFLc0mNfO7HZD1dZY=
 		</data>
 		<key>Headers/ZDKConfig.h</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		wqDKkiG93MFGbciloTavTOeK1cI=
+		kUrJmFRl090e9FGyfE8+bA3v65U=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -75,11 +75,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			RwEruJTof3YgoiR9RTxV7477k9Q=
+			z7G1Zz8XRHnFLc0mNfO7HZD1dZY=
 			</data>
 			<key>hash2</key>
 			<data>
-			WS56xtMP5K8a9C2ct76Yqo5m8QQPco03F0nHvv3Yw2c=
+			AhQbw4IpCRHNBwTP76S/68nVLJH3K6GXiTMNdbuwP04=
 			</data>
 		</dict>
 		<key>Headers/ZDKConfig.h</key>
