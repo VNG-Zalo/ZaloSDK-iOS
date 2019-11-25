@@ -70,6 +70,11 @@
  Login Zalo with facebook account
  */
 - (void) authenticateFacebookInController:(UIViewController *) controller withCompletionHandler: (void (^)(ZOOauthResponseObject* response)) handler;
+
+/**
+Login Zalo with facebook access token
+*/
+- (void) authenticateWithFacebookAccessToken: (NSString *) accessToken withCompletionHandler:(void (^)(ZOOauthResponseObject *))handler;
 - (void) setFacebookAppId: (NSString *) appId;
 /**
  Default is NO

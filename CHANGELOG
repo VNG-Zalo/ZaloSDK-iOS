@@ -1,4 +1,18 @@
 ===========================
+2.4.1125
+===========================
+- Fix lỗi UI khi login bằng webview
+- Thêm method loign facebook bằng access token
+
+===========================
+2.4.0912
+===========================
+- Chuyển UIWebView -> WKWebView
+- Thêm oauth code khi get device id
+- Fix lỗi ui web view login facebook
+- Login zalo bằng SFSafariViewController & SFAuthenticationSession thay cho web view
+
+===========================
 2.4.0717
 ===========================
 - Add SettingManager
