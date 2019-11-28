@@ -40,8 +40,9 @@ typedef NS_ENUM(NSInteger, ZOOrientationType){
 };
 
 typedef NS_ENUM(NSInteger, ZOShareViaType) {
-    ZOShareViaTypeAppThenWeb,
-    ZOShareViaTypeWebThenApp
+    ZOShareViaTypeApp,
+    ZOShareViaTypeWeb,
+    ZOShareViaTypeAppOrWeb,
 };
 
 

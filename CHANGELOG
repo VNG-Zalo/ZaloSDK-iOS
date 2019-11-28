@@ -1,4 +1,11 @@
 ===========================
+2.4.1125.1
+===========================
+- Fix lỗi crash khi đóng webview login
+- Fix lỗi không được feed/message bằng web view
+- Thêm option share feed qua app, web, app hoặc web
+
+===========================
 2.4.1125
 ===========================
 - Fix lỗi UI khi login bằng webview
