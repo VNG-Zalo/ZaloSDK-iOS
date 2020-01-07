@@ -7,7 +7,7 @@
 
 Pod::Spec.new do |s|
 s.name             = 'ZaloSDK'
-s.version          = '2.4.1125.1'
+s.version          = '2.4.1125.2'
 s.summary          = 'Zalo SDK'
 
 s.description      = <<-DESC
@@ -21,5 +21,14 @@ s.author           = { 'Liem Vo' => 'liemvouy@gmail.com' }
 s.source           = { :git => 'https://github.com/VNG-Zalo/ZaloSDK-iOS.git', :tag => s.version.to_s }
 
 s.ios.deployment_target = '8.0'
-s.ios.vendored_frameworks = 'ZaloSDK/Frameworks/ZaloSDKCoreKit.framework', 'ZaloSDK/Frameworks/ZaloSDK.framework'
+
+s.subspec 'Core' do |cs|
+    cs.ios.vendored_frameworks = 'ZaloSDK/Frameworks/ZaloSDKCoreKit.framework'
+end
+
+s.subspec 'Main' do |cs|
+    cs.ios.vendored_frameworks = 'ZaloSDK/Frameworks/ZaloSDK.framework'
+    cs.dependency 'ZaloSDK/Core'
+end
+
 end
