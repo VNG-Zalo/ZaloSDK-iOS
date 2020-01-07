@@ -1,6 +1,6 @@
 {
   "name": "ZaloSDK",
-  "version": "2.3.0710",
+  "version": "2.4.1125.3",
   "summary": "Zalo SDK",
   "description": "Zalo software development kit for iOS\nDocument: http://developers.zalo.me/docs/sdk/ios-sdk-9",
   "homepage": "http://developers.zalo.me/docs/sdk/ios-sdk-9",
@@ -13,15 +13,43 @@
   },
   "source": {
     "git": "https://github.com/VNG-Zalo/ZaloSDK-iOS.git",
-    "tag": "2.3.0710"
+    "tag": "2.4.1125.3"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "ios": {
-    "vendored_frameworks": [
-      "ZaloSDK/Frameworks/ZaloSDKCoreKit.framework",
-      "ZaloSDK/Frameworks/ZaloSDK.framework"
-    ]
-  }
+  "default_subspecs": [
+    "Core",
+    "Main"
+  ],
+  "subspecs": [
+    {
+      "name": "Core",
+      "ios": {
+        "vendored_frameworks": "ZaloSDK/Frameworks/ZaloSDKCoreKit.framework"
+      }
+    },
+    {
+      "name": "Main",
+      "ios": {
+        "vendored_frameworks": "ZaloSDK/Frameworks/ZaloSDK.framework"
+      },
+      "dependencies": {
+        "ZaloSDK/Core": [
+
+        ]
+      }
+    },
+    {
+      "name": "Pixel",
+      "ios": {
+        "vendored_frameworks": "ZaloSDK/Frameworks/ZPTracker.framework"
+      },
+      "dependencies": {
+        "ZaloSDK/Core": [
+
+        ]
+      }
+    }
+  ]
 }
