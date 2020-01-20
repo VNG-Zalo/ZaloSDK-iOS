@@ -3,7 +3,12 @@ PODS:
   - AlamofireImage (3.3.0):
     - Alamofire (~> 4.5)
   - Eureka (4.2.0)
-  - ZaloSDK (2.3.0710)
+  - ZaloSDK (2.4.1125.3):
+    - ZaloSDK/Core (= 2.4.1125.3)
+    - ZaloSDK/Main (= 2.4.1125.3)
+  - ZaloSDK/Core (2.4.1125.3)
+  - ZaloSDK/Main (2.4.1125.3):
+    - ZaloSDK/Core
 
 DEPENDENCIES:
   - AlamofireImage (~> 3.3)
@@ -11,7 +16,7 @@ DEPENDENCIES:
   - ZaloSDK (from `../`)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - Alamofire
     - AlamofireImage
     - Eureka
@@ -24,8 +29,8 @@ SPEC CHECKSUMS:
   Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
   AlamofireImage: 2e784dc5d00f04903a52c1d169181469c805c3df
   Eureka: 0748c7bbb2560130e43c7bfa83e99c98854a1f42
-  ZaloSDK: 46c0c197c4cb28123012955cb48e521c550e2e05
+  ZaloSDK: 1b88b29ca6a00bac801a1271c41272789850c335
 
 PODFILE CHECKSUM: 0837b07f9704767ec95d8ecf6608dcfcb84fbc85
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.8.3

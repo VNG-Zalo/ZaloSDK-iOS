@@ -1,0 +1,6 @@
+framework module ZingAnalytics {
+  umbrella header "ZingAnalytics.h"
+
+  export *
+  module * { export * }
+}

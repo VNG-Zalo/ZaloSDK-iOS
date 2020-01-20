@@ -210,7 +210,7 @@ typedef void (^ZOGraphCallback)(ZOGraphResponseObject* response);
 
 
 //This method is used to config sharing zalo using app or web
-//Default is ZOShareViaTypeApp
+//Default is ZOShareViaTypeAppOrWeb
 - (void)shareZaloUsing:(ZOShareViaType)type;
 
 // Disable option to post to user's wall when sharing with zalo app

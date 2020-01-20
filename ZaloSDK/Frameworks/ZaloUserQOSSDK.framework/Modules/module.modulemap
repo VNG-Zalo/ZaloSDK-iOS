@@ -1,0 +1,6 @@
+framework module ZaloUserQOSSDK {
+  umbrella header "ZaloUserQOSSDK.h"
+
+  export *
+  module * { export * }
+}

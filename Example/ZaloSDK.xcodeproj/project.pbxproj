@@ -338,7 +338,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-ZaloSDK_Demo/Pods-ZaloSDK_Demo-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-ZaloSDK_Demo/Pods-ZaloSDK_Demo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
@@ -351,7 +351,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZaloSDK_Demo/Pods-ZaloSDK_Demo-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZaloSDK_Demo/Pods-ZaloSDK_Demo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
