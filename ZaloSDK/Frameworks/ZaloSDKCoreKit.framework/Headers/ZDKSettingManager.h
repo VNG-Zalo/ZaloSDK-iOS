@@ -20,6 +20,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, readonly) BOOL loginBrowser;
 @property (nonatomic) NSTimeInterval expireTime;
 
+//user qos enabled
+@property (nonatomic, readonly) BOOL userQOSEnabled;
+
 + (instancetype) sharedInstance;
 - (void) loadSettings;
 - (void) reset;

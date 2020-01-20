@@ -7,7 +7,7 @@
 
 Pod::Spec.new do |s|
 s.name             = 'ZaloSDK'
-s.version          = '2.4.1125.3'
+s.version          = '2.5.0120'
 s.summary          = 'Zalo SDK'
 
 s.description      = <<-DESC
@@ -28,6 +28,16 @@ end
 
 s.subspec 'Main' do |cs|
     cs.ios.vendored_frameworks = 'ZaloSDK/Frameworks/ZaloSDK.framework'
+    cs.dependency 'ZaloSDK/Core'
+end
+
+s.subspec 'Analytics' do |cs|
+    cs.ios.vendored_frameworks = 'ZaloSDK/Frameworks/ZingAnalytics.framework'
+    cs.dependency 'ZaloSDK/Core'
+end
+
+s.subspec 'QOS' do |cs|
+    cs.ios.vendored_frameworks = 'ZaloSDK/Frameworks/ZaloUserQOSSDK.framework'
     cs.dependency 'ZaloSDK/Core'
 end
 
