@@ -82,6 +82,11 @@ Login Zalo with facebook access token
 - (void) setAllowsSignInFacebookWithBrowser: (BOOL) yesOrNo;
 
 /**
+Login Zalo with Apple account
+*/
+- (void) authenticateAppleInController:(UIViewController *) controller withCompletionHandler: (void (^)(ZOOauthResponseObject* response)) handler;
+
+/**
  Login Zalo with Google account
  */
 - (void) authenticateGoogleInController:(UIViewController *)controller

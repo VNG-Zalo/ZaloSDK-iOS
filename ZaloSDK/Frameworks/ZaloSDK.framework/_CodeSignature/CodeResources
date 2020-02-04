@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/ZDK.h</key>
 		<data>
-		YKKh/5ZEZESCabsL5I7VcVKMO74=
+		k/jLoEyIRiiUuZZaO12JRiWhAv4=
 		</data>
 		<key>Headers/ZDKConfig.h</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Headers/ZOZaloError.h</key>
 		<data>
-		DFWC4YVC1t66BQTWGPkX+s/fpas=
+		iGY5c/qiPL2U9zSyyMPCfUYd124=
 		</data>
 		<key>Headers/ZOZingMeLoginView.h</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		RpBpIFwDykodgyYqUAuiRtApCiE=
+		h9qV4amtYkIv9Q7pE1IElrTG0jI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -75,11 +75,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			YKKh/5ZEZESCabsL5I7VcVKMO74=
+			k/jLoEyIRiiUuZZaO12JRiWhAv4=
 			</data>
 			<key>hash2</key>
 			<data>
-			qht1El50BBv7tRePVq99NvdT7ayDvQKVGJ6IbU857DU=
+			Lm7L5w/GhrHFl063WOKZ6Cv89kCx+4ND2//EGw61IFI=
 			</data>
 		</dict>
 		<key>Headers/ZDKConfig.h</key>
@@ -185,11 +185,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			DFWC4YVC1t66BQTWGPkX+s/fpas=
+			iGY5c/qiPL2U9zSyyMPCfUYd124=
 			</data>
 			<key>hash2</key>
 			<data>
-			7eVNYll9gu1Ezcz0f0HEtN8TM+OyjtgDfDGUp1BAc48=
+			60STHMU4Y4RyDQRh+2zeZc/r7ZxeZv0NCFlqioPhaUw=
 			</data>
 		</dict>
 		<key>Headers/ZOZingMeLoginView.h</key>

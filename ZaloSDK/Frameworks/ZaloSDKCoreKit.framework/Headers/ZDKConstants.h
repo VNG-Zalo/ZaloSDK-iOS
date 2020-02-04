@@ -11,6 +11,7 @@
 typedef NS_ENUM(NSInteger, ZOLoginType){
     ZOLoginTypeUnknown,
     ZOLoginTypeFacebook,
+    ZOLoginTypeApple,
     ZOLoginTypeZalo,
     ZOLoginTypeGooglePlus,
     ZOLoginTypeZingMe,
@@ -34,5 +35,5 @@ typedef NS_ENUM(NSInteger, ZDKErrorCode) {
 
 @end
 
-#define ZDK_CORE_VERSION @"2.5.0120"
+#define ZDK_CORE_VERSION @"2.5.0204"
 #define kZDKSDKDidFinishGetSDKIDAndPrivateKeyNotification   @"kZDKSDKDidFinishGetSDKIDAndPrivateKeyNotification"

@@ -1,4 +1,14 @@
 ===========================
+2.5.0204
+===========================
+- Thêm chức năng Sign With apple:
+  + Thêm Button trên login form đối với device > iOS 13
+  + Thêm method -[ZaloSDK authenticateAppleInController:withCompletionHandler:]
+- Để login bằng tài khoản apple, app cần setup:
+  + Theo guide của apple: https://help.apple.com/developer-account/?lang=en#/devde676e696
+  + Thêm team id, Sign in with Apple Private Key trên trang developer của Zalo
+
+===========================
 2.5.0120
 ===========================
 - Thêm module pixel tracking

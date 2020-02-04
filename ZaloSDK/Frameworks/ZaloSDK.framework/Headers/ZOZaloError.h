@@ -135,6 +135,12 @@ enum ZaloSDKErrorCode {
     kZaloSDKErrorRegisterCMNDSuccess = -5401,
     
     /**
+     Login apple
+     */
+    kZaloSDKErrorAppleIOSNotSupported = -5500,
+    kZaloSDKErrorAppleIOSLoginError = -5501,
+    
+    /**
      Unknown exception
      */
     kZaloSDKErrorCodeUnknownException = -1000,
