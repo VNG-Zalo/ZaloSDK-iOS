@@ -1,4 +1,10 @@
 ===========================
+2.5.0220
+===========================
+- Update button sign apple trên login form thành màu trắng
+- Assign raw value cho enum ZOLoginType
+
+===========================
 2.5.0204
 ===========================
 - Thêm chức năng Sign With apple:
