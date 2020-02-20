@@ -9,13 +9,13 @@
 #import <Foundation/Foundation.h>
 
 typedef NS_ENUM(NSInteger, ZOLoginType){
-    ZOLoginTypeUnknown,
-    ZOLoginTypeFacebook,
-    ZOLoginTypeApple,
-    ZOLoginTypeZalo,
-    ZOLoginTypeGooglePlus,
-    ZOLoginTypeZingMe,
-    ZOLoginTypeGuest
+    ZOLoginTypeUnknown = 0,
+    ZOLoginTypeFacebook = 1,
+    ZOLoginTypeZalo = 2,
+    ZOLoginTypeGooglePlus = 3,
+    ZOLoginTypeZingMe = 4,
+    ZOLoginTypeGuest = 5,
+    ZOLoginTypeApple = 7,
 };
 
 
@@ -35,5 +35,5 @@ typedef NS_ENUM(NSInteger, ZDKErrorCode) {
 
 @end
 
-#define ZDK_CORE_VERSION @"2.5.0204"
+#define ZDK_CORE_VERSION @"2.5.0220"
 #define kZDKSDKDidFinishGetSDKIDAndPrivateKeyNotification   @"kZDKSDKDidFinishGetSDKIDAndPrivateKeyNotification"
