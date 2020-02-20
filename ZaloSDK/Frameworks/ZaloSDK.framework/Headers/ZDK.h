@@ -76,6 +76,7 @@ Login Zalo with facebook access token
 */
 - (void) authenticateWithFacebookAccessToken: (NSString *) accessToken withCompletionHandler:(void (^)(ZOOauthResponseObject *))handler;
 - (void) setFacebookAppId: (NSString *) appId;
+- (void) setFacebookScopes: (NSArray<NSString *> *) scopes;
 /**
  Default is NO
  **/
