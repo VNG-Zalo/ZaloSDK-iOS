@@ -61,6 +61,10 @@
                        parentController:(UIViewController *)parentController
                                 handler:(void (^)(ZOOauthResponseObject* response))handler;
 
+- (void) authenticateZaloWithAuthenType:(enum ZAZaloSDKAuthenType) type
+                       parentController:(UIViewController *)parentController
+                          isShowLoading:(BOOL) isShow
+                                handler:(void (^)(ZOOauthResponseObject* response))handler;
 /**
  Register zalo accoun
  */

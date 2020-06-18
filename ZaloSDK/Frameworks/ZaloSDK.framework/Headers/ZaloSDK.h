@@ -5,7 +5,7 @@
 //  Created by Liem Vo Uy on 4/28/14.
 //  Copyright (c) 2014 VNG. All rights reserved.
 //
-
+// SDK Version: 2.5.0618
 
 #import <ZaloSDK/ZOResponseObject.h>
 #import <ZaloSDK/ZOZaloError.h>
