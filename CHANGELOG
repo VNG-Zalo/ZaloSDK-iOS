@@ -1,3 +1,11 @@
+
+===========================
+2.5.0718
+===========================
+- Thêm isShowLoading trong authenticateZaloWithAuthenType để chủ động thay đổi UI Loading từ 3rd
+- Thêm mã lỗi khi login
+
+
 ===========================
 2.5.0310
 ===========================
