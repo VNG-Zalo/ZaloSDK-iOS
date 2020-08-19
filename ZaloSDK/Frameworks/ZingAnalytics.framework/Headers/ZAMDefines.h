@@ -28,6 +28,7 @@
 #define kSdkIdKey @"zdtsdk_sdk_id"
 #define kZDKSDKDidFinishGetSDKIDAndPrivateKeyNotification   @"kZDKSDKDidFinishGetSDKIDAndPrivateKeyNotification"
 #define ZAMUserDefaults [NSUserDefaults standardUserDefaults]
+#define kZDKSDKDidFinishGetDeviceIdWithCallbackKeyNotification  @"kZDKSDKDidFinishGetDeviceIdWithCallbackKeyNotification"
 
 
 #endif
