@@ -24,6 +24,7 @@
 #define ZDTSDK_MIN_STORE_EVENTS_INTERVAL 10
 #define ZDKSDK_DEFAULT_MAX_EVENT_LIFE_INTERVAL  259200 //seconds, 3 days
 #define ZSDK_LOG_TAG @"[ZDK]"
+#define ZDTZDK_TIMES_RETRY_WHEN_SUBMIT_EVENT_FAILED 3
 
 #define kSdkIdKey @"zdtsdk_sdk_id"
 #define kZDKSDKDidFinishGetSDKIDAndPrivateKeyNotification   @"kZDKSDKDidFinishGetSDKIDAndPrivateKeyNotification"
