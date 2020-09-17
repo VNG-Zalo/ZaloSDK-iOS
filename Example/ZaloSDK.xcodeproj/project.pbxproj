@@ -248,7 +248,7 @@
 					};
 					65A9A8851F7E404C00D23D33 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 2L644Y8ZFY;
+						DevelopmentTeam = CVB6BX97VM;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -258,6 +258,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -552,7 +553,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = 2L644Y8ZFY;
+				DEVELOPMENT_TEAM = CVB6BX97VM;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = ZaloSDK/Info.plist;
@@ -580,7 +581,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 2L644Y8ZFY;
+				DEVELOPMENT_TEAM = CVB6BX97VM;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = ZaloSDK/Info.plist;

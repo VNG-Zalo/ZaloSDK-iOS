@@ -16,6 +16,7 @@
 - (NSString *) deviceId4Ads;
 - (void) loadSDKId;
 - (void) deviceIdWithCallback: (void(^)(NSString * deviceId)) callback;
+- (void) deviceIdWithCallback: (void(^)(NSString * deviceId)) callback isForce:(BOOL) isForce;
 - (NSDictionary *) prepareDeviceIdData;
 - (NSDictionary *) prepareTrackingData;
 

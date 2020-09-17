@@ -13,6 +13,7 @@
 @property (nonatomic, strong) NSString *appId;
 @property (nonatomic, strong) NSString *deviceId;
 @property (nonatomic, strong) NSDate *deviceIdExpireDate;
+@property (nonatomic, strong) NSString *deviceIdFromZalo;
 @property (nonatomic, strong) NSString *deviceId4Ads;
 @property (nonatomic, strong) NSDate *deviceId4AdsExpireDate;
 @property (nonatomic, strong) NSString *sdkId;
@@ -23,5 +24,6 @@
 @property (nonatomic, strong) NSString *zaloUserId;
 @property (nonatomic, strong) NSString *zaloOauthCode;
 - (BOOL) synchronize;
+- (void) tryToGetDeviceIdFromZalo;
 
 @end

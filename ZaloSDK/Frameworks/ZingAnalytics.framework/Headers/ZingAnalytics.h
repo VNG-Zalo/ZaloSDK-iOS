@@ -14,6 +14,6 @@
 #import <ZingAnalytics/ZAMDefines.h>
 #import <ZingAnalytics/ZAMTrackedViewController.h>
 
-#define ZingAnalyticsVersion    @"1.3.1025"
+#define ZingAnalyticsVersion    @"1.5.0917"
 
 #endif /* ZingAnalytics_h */

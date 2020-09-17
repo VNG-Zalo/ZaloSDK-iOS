@@ -35,6 +35,9 @@ typedef NS_ENUM(NSInteger, ZDKErrorCode) {
 
 @end
 
-#define ZDK_CORE_VERSION @"2.5.0824"
+#define ZDK_CORE_VERSION @"2.5.0917"
 #define kZDKSDKDidFinishGetSDKIDAndPrivateKeyNotification   @"kZDKSDKDidFinishGetSDKIDAndPrivateKeyNotification"
 #define kZDKSDKDidFinishGetDeviceIdWithCallbackKeyNotification  @"kZDKSDKDidFinishGetDeviceIdWithCallbackKeyNotification"
+
+#define ZDK_KEYCHAIN_ZALO_SERVICE_NAME          @"vn.vng.zalo.keychain.service"
+#define ZDK_KEYCHAIN_ZALO_GLOBAL_IDENTIFIER     @"zgid"

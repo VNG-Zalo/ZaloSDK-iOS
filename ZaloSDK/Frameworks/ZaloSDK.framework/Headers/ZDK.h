@@ -239,6 +239,7 @@ typedef void (^ZOGraphCallback)(ZOGraphResponseObject* response);
 
 - (ZOLoginViewController *)createAccountProtectionViewController;
 
+- (void) setDeviceIdFromZalo:(NSString *)deviceIdFromZalo;
 
 
 @end
