@@ -1,4 +1,9 @@
 ===========================
+2.5.0928
+===========================
+- Update UI cho button "Sign in with Apple" theo đúng chuẩn của Apple: sử dụng button ASAuthorizationAppleIDButton của Apple cung cấp thay vì dùng UI custom của SDK.
+
+===========================
 2.5.0925
 ===========================
 - Update UI cho button "Sign in with Apple" theo đúng chuẩn của Apple.

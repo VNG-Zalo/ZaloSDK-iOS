@@ -76,6 +76,7 @@ didAuthenticateWithResponse:(ZOOauthResponseObject *)response;
 @property (strong, nonatomic) UIView *lineView;
 @property (strong, nonatomic) UILabel * titleLabel;
 @property (strong, nonatomic) UIButton * button;
+@property (strong, nonatomic) UIControl * btnAppleSignIn;
 @property (assign, nonatomic, readonly) ZOLoginType type;
 @property (assign, nonatomic) ZOLoginButtonStyle style;
 @property (weak, nonatomic) id<ZOLoginButtonDelegate> delegate;
