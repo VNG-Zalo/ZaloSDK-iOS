@@ -89,3 +89,5 @@ didAuthenticateWithResponse:(ZOOauthResponseObject *)response;
 - (void)onClickedLoginType:(ZOLoginType)loginType;
 @end
 
+@interface ZOTextField : UITextField
+@end

@@ -22,7 +22,7 @@
 		</data>
 		<key>Headers/ZOLoginViewController.h</key>
 		<data>
-		1g9WlW4yTZkHZpgLhw/ft3EDn80=
+		RyQaQKyzg8iLaUphqZkgyLLo50c=
 		</data>
 		<key>Headers/ZOOauthResponseObject.h</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		v5gzNIb0QpEOTiCTPJxsOyoY5jw=
+		/mxxHrF9EyRtqhlY1vSLSOUxhSg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -119,11 +119,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1g9WlW4yTZkHZpgLhw/ft3EDn80=
+			RyQaQKyzg8iLaUphqZkgyLLo50c=
 			</data>
 			<key>hash2</key>
 			<data>
-			o1D9/gMGgpFH5xYAUmSse2HvOr7pUgU9rkdfaLXQ9uU=
+			XJ79bIutkV/yiekqyM7aNYLlVNvhdEBgmR8TJQaBQWU=
 			</data>
 		</dict>
 		<key>Headers/ZOOauthResponseObject.h</key>
