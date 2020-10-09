@@ -8,6 +8,7 @@
 
 import UIKit
 import ZaloSDK
+import Alamofire
 import AlamofireImage
 
 class MainViewController: UITableViewController {
@@ -59,6 +60,11 @@ extension MainViewController {
         }
         
         profileLabel.text = "\(name)\n\(id)\n\(gender)"
-        profileImageView.af_setImage(withURL: url)
+        Alamofire.request(url).responseData { [self] (response) in
+            if case .success(let data) = response.result {
+                let image = UIImage(data: data)
+                profileImageView.image = image
+            }
+        }
     }
 }
