@@ -23,6 +23,7 @@
 // THE SOFTWARE.
 
 import Foundation
+import UIKit
 
 public protocol DatePickerRowProtocol: class {
     var minimumDate: Date? { get set }
@@ -34,7 +35,7 @@ open class DateCell: Cell<Date>, CellType {
 
     public var datePicker: UIDatePicker
 
-    public required init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+    public required init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         datePicker = UIDatePicker()
         super.init(style: style, reuseIdentifier: reuseIdentifier)
     }
@@ -50,6 +51,12 @@ open class DateCell: Cell<Date>, CellType {
         editingAccessoryType =  .none
         datePicker.datePickerMode = datePickerMode()
         datePicker.addTarget(self, action: #selector(DateCell.datePickerValueChanged(_:)), for: .valueChanged)
+
+        #if swift(>=5.2)
+            if #available(iOS 13.4, *) {
+                datePicker.preferredDatePickerStyle = .wheels
+            }
+        #endif
     }
 
     deinit {
@@ -87,7 +94,7 @@ open class DateCell: Cell<Date>, CellType {
         detailTextLabel?.text = row.displayValueFor?(row.value)
     }
 
-    private func datePickerMode() -> UIDatePickerMode {
+    private func datePickerMode() -> UIDatePicker.Mode {
         switch row {
         case is DateRow:
             return .date

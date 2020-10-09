@@ -23,10 +23,11 @@
 // THE SOFTWARE.
 
 import Foundation
+import UIKit
 
 open class TextCell: _FieldCell<String>, CellType {
 
-    required public init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+    required public init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
     }
 
@@ -44,7 +45,7 @@ open class TextCell: _FieldCell<String>, CellType {
 
 open class IntCell: _FieldCell<Int>, CellType {
 
-    required public init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+    required public init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
     }
 
@@ -62,7 +63,7 @@ open class IntCell: _FieldCell<Int>, CellType {
 
 open class PhoneCell: _FieldCell<String>, CellType {
 
-    required public init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+    required public init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
     }
 
@@ -73,12 +74,15 @@ open class PhoneCell: _FieldCell<String>, CellType {
     open override func setup() {
         super.setup()
         textField.keyboardType = .phonePad
+        if #available(iOS 10,*) {
+            textField.textContentType = .telephoneNumber
+        }
     }
 }
 
 open class NameCell: _FieldCell<String>, CellType {
 
-    required public init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+    required public init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
     }
 
@@ -91,12 +95,15 @@ open class NameCell: _FieldCell<String>, CellType {
         textField.autocorrectionType = .no
         textField.autocapitalizationType = .words
         textField.keyboardType = .asciiCapable
+        if #available(iOS 10,*) {
+            textField.textContentType = .name
+        }
     }
 }
 
 open class EmailCell: _FieldCell<String>, CellType {
 
-    required public init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+    required public init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
     }
 
@@ -109,12 +116,15 @@ open class EmailCell: _FieldCell<String>, CellType {
         textField.autocorrectionType = .no
         textField.autocapitalizationType = .none
         textField.keyboardType = .emailAddress
+        if #available(iOS 10,*) {
+            textField.textContentType = .emailAddress
+        }
     }
 }
 
 open class PasswordCell: _FieldCell<String>, CellType {
 
-    required public init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+    required public init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
     }
 
@@ -128,12 +138,16 @@ open class PasswordCell: _FieldCell<String>, CellType {
         textField.autocapitalizationType = .none
         textField.keyboardType = .asciiCapable
         textField.isSecureTextEntry = true
+        textField.adjustsFontSizeToFitWidth = true
+        if #available(iOS 11,*) {
+            textField.textContentType = .password
+        }
     }
 }
 
 open class DecimalCell: _FieldCell<Double>, CellType {
 
-    required public init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+    required public init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
     }
 
@@ -150,7 +164,7 @@ open class DecimalCell: _FieldCell<Double>, CellType {
 
 open class URLCell: _FieldCell<URL>, CellType {
 
-    required public init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+    required public init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
     }
 
@@ -163,12 +177,15 @@ open class URLCell: _FieldCell<URL>, CellType {
         textField.autocorrectionType = .no
         textField.autocapitalizationType = .none
         textField.keyboardType = .URL
+        if #available(iOS 10,*) {
+            textField.textContentType = .URL
+        }
     }
 }
 
 open class TwitterCell: _FieldCell<String>, CellType {
 
-    required public init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+    required public init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
     }
 
@@ -186,7 +203,7 @@ open class TwitterCell: _FieldCell<String>, CellType {
 
 open class AccountCell: _FieldCell<String>, CellType {
 
-    required public init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+    required public init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
     }
 
@@ -199,12 +216,15 @@ open class AccountCell: _FieldCell<String>, CellType {
         textField.autocorrectionType = .no
         textField.autocapitalizationType = .none
         textField.keyboardType = .asciiCapable
+        if #available(iOS 11,*) {
+            textField.textContentType = .username
+        }
     }
 }
 
 open class ZipCodeCell: _FieldCell<String>, CellType {
 
-    required public init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+    required public init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
     }
 
@@ -217,6 +237,9 @@ open class ZipCodeCell: _FieldCell<String>, CellType {
         textField.autocorrectionType = .no
         textField.autocapitalizationType = .allCharacters
         textField.keyboardType = .numbersAndPunctuation
+        if #available(iOS 10,*) {
+            textField.textContentType = .postalCode
+        }
     }
 }
 

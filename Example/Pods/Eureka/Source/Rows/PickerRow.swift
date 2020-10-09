@@ -23,6 +23,7 @@
 // THE SOFTWARE.
 
 import Foundation
+import UIKit
 
 // MARK: PickerCell
 
@@ -32,7 +33,7 @@ open class _PickerCell<T> : Cell<T>, CellType, UIPickerViewDataSource, UIPickerV
 
     fileprivate var pickerRow: _PickerRow<T>? { return row as? _PickerRow<T> }
 
-    public required init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+    public required init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         let pickerView = UIPickerView()
         self.picker = pickerView
         self.picker?.translatesAutoresizingMaskIntoConstraints = false
@@ -52,7 +53,7 @@ open class _PickerCell<T> : Cell<T>, CellType, UIPickerViewDataSource, UIPickerV
         super.setup()
         accessoryType = .none
         editingAccessoryType = .none
-        height = { UITableViewAutomaticDimension }
+        height = { UITableView.automaticDimension }
         picker.delegate = self
         picker.dataSource = self
     }
@@ -68,6 +69,8 @@ open class _PickerCell<T> : Cell<T>, CellType, UIPickerViewDataSource, UIPickerV
         picker?.delegate = nil
         picker?.dataSource = nil
     }
+
+    open var pickerTextAttributes: [NSAttributedString.Key: Any]?
 
     open func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
@@ -87,6 +90,12 @@ open class _PickerCell<T> : Cell<T>, CellType, UIPickerViewDataSource, UIPickerV
         }
     }
 
+    open func pickerView(_ pickerView: UIPickerView, attributedTitleForRow row: Int, forComponent component: Int) -> NSAttributedString? {
+        guard let pickerTextAttributes = pickerTextAttributes, let text = self.pickerView(pickerView, titleForRow: row, forComponent: component) else {
+            return nil
+        }
+        return NSAttributedString(string: text, attributes: pickerTextAttributes)
+    }
 }
 
 open class PickerCell<T> : _PickerCell<T> where T: Equatable {
@@ -95,13 +104,13 @@ open class PickerCell<T> : _PickerCell<T> where T: Equatable {
         super.init(coder: aDecoder)
     }
 
-    public required init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+    public required init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
     }
 
     open override func update() {
         super.update()
-        if let selectedValue = pickerRow?.value, let index = pickerRow?.options.index(of: selectedValue) {
+        if let selectedValue = pickerRow?.value, let index = pickerRow?.options.firstIndex(of: selectedValue) {
             picker.selectRow(index, inComponent: 0, animated: true)
         }
     }
