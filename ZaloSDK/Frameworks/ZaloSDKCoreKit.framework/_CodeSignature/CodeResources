@@ -54,11 +54,15 @@
 		</data>
 		<key>Headers/ZDKConstants.h</key>
 		<data>
-		NdyF+vHQyVFfHYLwzbsGEYZ9HtQ=
+		pM+Co75SfVRcRvfB84i3aSSvTtg=
 		</data>
 		<key>Headers/ZDKDeviceTracker.h</key>
 		<data>
 		hLkG3wvuMe0c42GsbutjO+t2X9c=
+		</data>
+		<key>Headers/ZDKKeyChainStore.h</key>
+		<data>
+		3iN/HiHiXcNWHgTgMKSiON16eZc=
 		</data>
 		<key>Headers/ZDKLogManager.h</key>
 		<data>
@@ -106,11 +110,11 @@
 		</data>
 		<key>Headers/ZaloSDKCoreKit.h</key>
 		<data>
-		CTr1PuoYCgrXck8PXGQyExi/YWM=
+		sxHRHcRgVs5BTxJVvX9p3HTMBz4=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		A/3nj4ht/NRDJRTO6VInQ0akXLc=
+		7iUL8SSYYpwrSsZBPU2SofukLmM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -255,11 +259,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NdyF+vHQyVFfHYLwzbsGEYZ9HtQ=
+			pM+Co75SfVRcRvfB84i3aSSvTtg=
 			</data>
 			<key>hash2</key>
 			<data>
-			tihhbDVpXEzAlnLdbXeEA1zDQqkdojFwhnQHMysVARU=
+			X/oR/u2CvVX26cBsaNOcdhhCSCVfTOLoqALySK37VQ0=
 			</data>
 		</dict>
 		<key>Headers/ZDKDeviceTracker.h</key>
@@ -271,6 +275,17 @@
 			<key>hash2</key>
 			<data>
 			ZH1XHFYXDL44STMCLxQGf9UITRJIK2sW4kIK/k9rR5s=
+			</data>
+		</dict>
+		<key>Headers/ZDKKeyChainStore.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			3iN/HiHiXcNWHgTgMKSiON16eZc=
+			</data>
+			<key>hash2</key>
+			<data>
+			k9O4Z448Sird73dQWkcL+J9jK9p59nw3u94XYyL2qGw=
 			</data>
 		</dict>
 		<key>Headers/ZDKLogManager.h</key>
@@ -398,11 +413,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			CTr1PuoYCgrXck8PXGQyExi/YWM=
+			sxHRHcRgVs5BTxJVvX9p3HTMBz4=
 			</data>
 			<key>hash2</key>
 			<data>
-			kcsUdKiSG+F4/hF8zogUV+7RRh6+qOBy49gA+4WNQRk=
+			9sY70ZCULU4foHy8+H5mUpS3IjJJpHv7juYKR0+crb8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
