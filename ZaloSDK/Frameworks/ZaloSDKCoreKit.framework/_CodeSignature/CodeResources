@@ -54,7 +54,7 @@
 		</data>
 		<key>Headers/ZDKConstants.h</key>
 		<data>
-		pM+Co75SfVRcRvfB84i3aSSvTtg=
+		1RP2Vx6R+raCMMwltoh6M2XHAdk=
 		</data>
 		<key>Headers/ZDKDeviceTracker.h</key>
 		<data>
@@ -114,7 +114,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		7iUL8SSYYpwrSsZBPU2SofukLmM=
+		lFuKkBzznRIVrwI+SQH8AGfu8/s=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -259,11 +259,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			pM+Co75SfVRcRvfB84i3aSSvTtg=
+			1RP2Vx6R+raCMMwltoh6M2XHAdk=
 			</data>
 			<key>hash2</key>
 			<data>
-			X/oR/u2CvVX26cBsaNOcdhhCSCVfTOLoqALySK37VQ0=
+			V9RouQHj8Li1dNFbn5bIODYx2uGwU5j+4v+tkjeyJmE=
 			</data>
 		</dict>
 		<key>Headers/ZDKDeviceTracker.h</key>

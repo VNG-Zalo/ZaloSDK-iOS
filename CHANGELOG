@@ -1,4 +1,13 @@
 ===========================
+2.5.1009
+===========================
+- ZaloSDK
++ Fix bug: sometimes crash on iOS 14 when network is not stable.
++ Update Eureka to version 5.3.1 for working on Xcode 12.
+- Example
++ Fix bug load avatar.
+
+===========================
 2.5.1001
 ===========================
 - Fix bug trên iOS 13: icon của textfield bị lệch khi touch vào.
