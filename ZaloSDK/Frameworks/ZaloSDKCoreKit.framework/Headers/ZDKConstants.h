@@ -35,7 +35,7 @@ typedef NS_ENUM(NSInteger, ZDKErrorCode) {
 
 @end
 
-#define ZDK_CORE_VERSION @"2.5.1214"
+#define ZDK_CORE_VERSION @"2.6.0505"
 #define kZDKSDKDidFinishGetSDKIDAndPrivateKeyNotification   @"kZDKSDKDidFinishGetSDKIDAndPrivateKeyNotification"
 #define kZDKSDKDidFinishGetDeviceIdWithCallbackKeyNotification  @"kZDKSDKDidFinishGetDeviceIdWithCallbackKeyNotification"
 
