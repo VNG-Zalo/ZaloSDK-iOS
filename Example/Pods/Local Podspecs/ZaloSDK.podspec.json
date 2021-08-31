@@ -1,6 +1,6 @@
 {
   "name": "ZaloSDK",
-  "version": "2.6.0729",
+  "version": "2.6.0730",
   "summary": "Zalo SDK",
   "description": "Zalo software development kit for iOS\nDocument: http://developers.zalo.me/docs/sdk/ios-sdk-9",
   "homepage": "http://developers.zalo.me/docs/sdk/ios-sdk-9",
@@ -13,7 +13,13 @@
   },
   "source": {
     "git": "https://github.com/VNG-Zalo/ZaloSDK-iOS.git",
-    "tag": "2.6.0729"
+    "tag": "2.6.0730"
+  },
+  "pod_target_xcconfig": {
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
+  },
+  "user_target_xcconfig": {
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
   },
   "platforms": {
     "ios": "9.0"

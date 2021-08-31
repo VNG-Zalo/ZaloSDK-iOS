@@ -7,7 +7,7 @@
 
 Pod::Spec.new do |s|
 s.name             = 'ZaloSDK'
-s.version          = '2.6.0729'
+s.version          = '2.6.0730'
 s.summary          = 'Zalo SDK'
 
 s.description      = <<-DESC
@@ -19,6 +19,13 @@ s.homepage         = 'http://developers.zalo.me/docs/sdk/ios-sdk-9'
 s.license          = { :type => 'MIT', :file => 'LICENSE' }
 s.author           = { 'Liem Vo' => 'liemvouy@gmail.com' }
 s.source           = { :git => 'https://github.com/VNG-Zalo/ZaloSDK-iOS.git', :tag => s.version.to_s }
+
+s.pod_target_xcconfig = {
+'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
+}
+s.user_target_xcconfig = {
+'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
+}
 
 s.ios.deployment_target = '9.0'
 
