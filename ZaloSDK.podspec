@@ -7,7 +7,7 @@
 
 Pod::Spec.new do |s|
 s.name             = 'ZaloSDK'
-s.version          = '2.6.0730'
+s.version          = '2.6.0729'
 s.summary          = 'Zalo SDK'
 
 s.description      = <<-DESC
