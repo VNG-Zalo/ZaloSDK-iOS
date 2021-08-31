@@ -7,7 +7,7 @@
 
 Pod::Spec.new do |s|
 s.name             = 'ZaloSDK'
-s.version          = '2.5.1009'
+s.version          = '2.6.0729'
 s.summary          = 'Zalo SDK'
 
 s.description      = <<-DESC
@@ -20,7 +20,7 @@ s.license          = { :type => 'MIT', :file => 'LICENSE' }
 s.author           = { 'Liem Vo' => 'liemvouy@gmail.com' }
 s.source           = { :git => 'https://github.com/VNG-Zalo/ZaloSDK-iOS.git', :tag => s.version.to_s }
 
-s.ios.deployment_target = '8.0'
+s.ios.deployment_target = '9.0'
 
 s.subspec 'Core' do |cs|
     cs.ios.vendored_frameworks = 'ZaloSDK/Frameworks/ZaloSDKCoreKit.framework'
@@ -33,16 +33,6 @@ end
 
 s.subspec 'Analytics' do |cs|
     cs.ios.vendored_frameworks = 'ZaloSDK/Frameworks/ZingAnalytics.framework'
-    cs.dependency 'ZaloSDK/Core'
-end
-
-s.subspec 'QOS' do |cs|
-    cs.ios.vendored_frameworks = 'ZaloSDK/Frameworks/ZaloUserQOSSDK.framework'
-    cs.dependency 'ZaloSDK/Core'
-end
-
-s.subspec 'Pixel' do |cs|
-    cs.ios.vendored_frameworks = 'ZaloSDK/Frameworks/ZPTracker.framework'
     cs.dependency 'ZaloSDK/Core'
 end
 
