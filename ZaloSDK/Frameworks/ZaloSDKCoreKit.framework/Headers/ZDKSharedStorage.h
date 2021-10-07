@@ -18,11 +18,11 @@
 @property (nonatomic, strong) NSDate *deviceId4AdsExpireDate;
 @property (nonatomic, strong) NSString *sdkId;
 @property (nonatomic, strong) NSString *sdkPrivateKey;
+@property (nonatomic, strong) NSString *viewer;
 
 
 //check this
 @property (nonatomic, strong) NSString *zaloUserId;
-@property (nonatomic, strong) NSString *zaloOauthCode;
 - (BOOL) synchronize;
 - (void) tryToGetDeviceIdFromZalo;
 

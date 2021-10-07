@@ -1,6 +1,0 @@
-framework module ZPTracker {
-  umbrella header "ZPTracker.h"
-
-  export *
-  module * { export * }
-}

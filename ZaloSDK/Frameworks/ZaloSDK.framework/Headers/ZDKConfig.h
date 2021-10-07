@@ -7,17 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <ZaloSDKCoreKit/ZaloSDKCoreKit.h>
 
 @interface ZDKConfig : NSObject
 
++ (instancetype)defaultConfig;
 
-+ (instancetype) defaultConfig;
+- (NSString *)getPreferedLanguageCode;
 
-//ISO2 language code: VI, MY, default VI
-//https://www.loc.gov/standards/iso639-2/php/code_list.php
-@property (nonatomic, strong) NSString* preferedLanguage;
-
-//Mobie country code: VN: 84, MM: 95... default 84
-@property (nonatomic, strong) NSString* preferedMobileCountryCode;
+- (void)setPreferedLanguageType:(ZDKLanguageType)languageType;
 
 @end
+

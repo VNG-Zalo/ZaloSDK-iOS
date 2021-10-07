@@ -25,6 +25,8 @@
 		65A9A8AD1F7E417900D23D33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		65A9A8B01F7E418C00D23D33 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65A9A8AA1F7E40A300D23D33 /* LaunchScreen.xib */; };
 		65A9A8B21F7E41A000D23D33 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
+		A024A0683E032080132EA537 /* AccessTokenUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A024A6F6880C362AD906B59E /* AccessTokenUtils.swift */; };
+		A024AB35445630FD3C95888E /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A024A994DB4A58628726F798 /* Constant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +60,8 @@
 		8579471D8DF1C1DCF042AF12 /* Pods_ZaloSDK_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZaloSDK_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		996FBBD3F767F6D6CB5DE7CC /* Pods-ZaloSDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZaloSDK_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZaloSDK_Tests/Pods-ZaloSDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		A024A6F6880C362AD906B59E /* AccessTokenUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessTokenUtils.swift; sourceTree = "<group>"; };
+		A024A994DB4A58628726F798 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		A8E955AC0C7A50B6CCE2CA42 /* Pods-ZaloSDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZaloSDK_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZaloSDK_Example/Pods-ZaloSDK_Example.release.xcconfig"; sourceTree = "<group>"; };
 		C89F74A08D2AD461E4FC17F8 /* Pods_ZaloSDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZaloSDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF3B34AE7F40A392DDA9A66B /* Pods-ZaloSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZaloSDK_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZaloSDK_Example/Pods-ZaloSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -145,10 +149,12 @@
 				65A9A89D1F7E409800D23D33 /* LoginViewController.swift */,
 				65A9A89E1F7E409800D23D33 /* MainViewController.swift */,
 				65A9A89F1F7E409800D23D33 /* OpenAPIDemoViewController.swift */,
+				A024A994DB4A58628726F798 /* Constant.swift */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				65A9A8AA1F7E40A300D23D33 /* LaunchScreen.xib */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
+				A024A6F6880C362AD906B59E /* AccessTokenUtils.swift */,
 			);
 			name = "Example for ZaloSDK";
 			path = ZaloSDK;
@@ -376,6 +382,8 @@
 				65A9A8A11F7E409800D23D33 /* AppDelegate.swift in Sources */,
 				65A9A8A41F7E409800D23D33 /* ClearNavigationStackSegue.swift in Sources */,
 				65A9A8A21F7E409800D23D33 /* ButtonCell.swift in Sources */,
+				A024AB35445630FD3C95888E /* Constant.swift in Sources */,
+				A024A0683E032080132EA537 /* AccessTokenUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

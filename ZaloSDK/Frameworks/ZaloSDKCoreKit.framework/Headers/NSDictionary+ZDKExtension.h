@@ -13,6 +13,8 @@
 //JSON Extensions
 - (NSString *) zdkJSONString;
 
++ (NSDictionary *)zdkDictionaryFromJSONString:(NSString *)jsonString;
+
 - (int)zdkIntForKey:(NSString *)key;
 
 - (long)zdkLongForKey:(NSString *)key;

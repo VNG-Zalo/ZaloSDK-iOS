@@ -6,11 +6,15 @@
 	<dict>
 		<key>Headers/ZDK.h</key>
 		<data>
-		yqZH0OBM7sBb+KM/KELfIxo3aBA=
+		uiZvubO33iBPnUuKvoezlJCh4zE=
 		</data>
 		<key>Headers/ZDKConfig.h</key>
 		<data>
-		Aa2TCrQHiMCcnmcBNsAmb5vvY8s=
+		avnACsvKfl0dnn4wbCWWCrNPPhs=
+		</data>
+		<key>Headers/ZDKDebug.h</key>
+		<data>
+		uGwWEnRpl1rzHxC1M/fLt8UlU4Y=
 		</data>
 		<key>Headers/ZOFeed.h</key>
 		<data>
@@ -22,11 +26,11 @@
 		</data>
 		<key>Headers/ZOLoginViewController.h</key>
 		<data>
-		RyQaQKyzg8iLaUphqZkgyLLo50c=
+		twx1H3YnORGe8qiQXMJSIiMuUqU=
 		</data>
 		<key>Headers/ZOOauthResponseObject.h</key>
 		<data>
-		sc2leh/Umv7iD+uROf34UbKeZro=
+		NtUAL6eITw0za3a2bh/g8JThhoY=
 		</data>
 		<key>Headers/ZORequestPermissionResponseObject.h</key>
 		<data>
@@ -34,19 +38,15 @@
 		</data>
 		<key>Headers/ZOResponseObject.h</key>
 		<data>
-		5xufHozMBj82eWaGXz4Ei7vZRJk=
+		mM+nyUnBm2Di+5X6j1LkPSh3dxw=
 		</data>
 		<key>Headers/ZOTokenResponseObject.h</key>
 		<data>
-		FbkVJ434CmBw8+FgssbIDHE1LpQ=
+		HzecJZMirU964NrXfVuiskOjw1g=
 		</data>
 		<key>Headers/ZOZaloApiDelegate.h</key>
 		<data>
 		4Sqw/7JZHGjXwMkUdAOtP0vPAvM=
-		</data>
-		<key>Headers/ZOZaloError.h</key>
-		<data>
-		iGY5c/qiPL2U9zSyyMPCfUYd124=
 		</data>
 		<key>Headers/ZOZingMeLoginView.h</key>
 		<data>
@@ -54,15 +54,15 @@
 		</data>
 		<key>Headers/ZaloSDK.h</key>
 		<data>
-		PpwaLBdqFyRJck9So4gYirE2qtA=
+		hZs3IgLcWnmPYxVeCZTSC1TWkp8=
 		</data>
 		<key>Headers/ZaloSDKDefine.h</key>
 		<data>
-		it3+TiSRnFmio5a2+SLFYwrPApM=
+		1Q9pEq9gPbUKOcEpDvOtabf38Vc=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		aRMqau2Q44UIdS8CsJanjaL5D8w=
+		UN6MWbeKLzJ1Mmza21fT23b7i8Q=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -75,22 +75,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			yqZH0OBM7sBb+KM/KELfIxo3aBA=
+			uiZvubO33iBPnUuKvoezlJCh4zE=
 			</data>
 			<key>hash2</key>
 			<data>
-			Ar2b1kxIlMeYgJIal+2f7AO8Jkti4/vtYZT04Rr8h+E=
+			fQX9ogn2rmp3Y01SxrUwqKcpGXzmrsVrt9Zay1IMXjM=
 			</data>
 		</dict>
 		<key>Headers/ZDKConfig.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Aa2TCrQHiMCcnmcBNsAmb5vvY8s=
+			avnACsvKfl0dnn4wbCWWCrNPPhs=
 			</data>
 			<key>hash2</key>
 			<data>
-			3Y0K9rd415inWbH+e35I7kKkuYM3YkPJzcezHzmCjMk=
+			cf5vLZg6NpbllINPXsB8CBkyCn0xrUo8eo2yok9gUec=
+			</data>
+		</dict>
+		<key>Headers/ZDKDebug.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			uGwWEnRpl1rzHxC1M/fLt8UlU4Y=
+			</data>
+			<key>hash2</key>
+			<data>
+			1YRRVUp9LWmgEzEBXNKG01ZuGYkRebxwM9IQRUBeUmU=
 			</data>
 		</dict>
 		<key>Headers/ZOFeed.h</key>
@@ -119,22 +130,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			RyQaQKyzg8iLaUphqZkgyLLo50c=
+			twx1H3YnORGe8qiQXMJSIiMuUqU=
 			</data>
 			<key>hash2</key>
 			<data>
-			XJ79bIutkV/yiekqyM7aNYLlVNvhdEBgmR8TJQaBQWU=
+			XkeDf27F2IOjqJJZGsP6f+pyd8e7D7szE/w6WfgZdg4=
 			</data>
 		</dict>
 		<key>Headers/ZOOauthResponseObject.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			sc2leh/Umv7iD+uROf34UbKeZro=
+			NtUAL6eITw0za3a2bh/g8JThhoY=
 			</data>
 			<key>hash2</key>
 			<data>
-			dDKvaJREh6HdDOebJfrDfrcsC7YGO4Kw7U3Fb6lX9PE=
+			Wb1Ww+4V0OSSufZkbx+tL3dfDurqkJj8h9vUYt9jUjQ=
 			</data>
 		</dict>
 		<key>Headers/ZORequestPermissionResponseObject.h</key>
@@ -152,22 +163,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			5xufHozMBj82eWaGXz4Ei7vZRJk=
+			mM+nyUnBm2Di+5X6j1LkPSh3dxw=
 			</data>
 			<key>hash2</key>
 			<data>
-			vtEGE3BvzFBy+YhDb7/eW9MYWQJ603doslC7Nja3tHk=
+			wN0wOARb56NDNAvuyJWiJFSF0LD0Y0/TjW6F5owRlRw=
 			</data>
 		</dict>
 		<key>Headers/ZOTokenResponseObject.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			FbkVJ434CmBw8+FgssbIDHE1LpQ=
+			HzecJZMirU964NrXfVuiskOjw1g=
 			</data>
 			<key>hash2</key>
 			<data>
-			NSArEH9odZaDefqJyYtn1Ox2A5347sPec7K4LeqTBG0=
+			Q24/cxx89sTCRezckeL+xUNLhQFORMzoQq06Jz5OOmA=
 			</data>
 		</dict>
 		<key>Headers/ZOZaloApiDelegate.h</key>
@@ -179,17 +190,6 @@
 			<key>hash2</key>
 			<data>
 			2gVfBuKcngppje0azT9S9TdO/Nn/jkj8d4VtM9086Ps=
-			</data>
-		</dict>
-		<key>Headers/ZOZaloError.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			iGY5c/qiPL2U9zSyyMPCfUYd124=
-			</data>
-			<key>hash2</key>
-			<data>
-			60STHMU4Y4RyDQRh+2zeZc/r7ZxeZv0NCFlqioPhaUw=
 			</data>
 		</dict>
 		<key>Headers/ZOZingMeLoginView.h</key>
@@ -207,22 +207,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			PpwaLBdqFyRJck9So4gYirE2qtA=
+			hZs3IgLcWnmPYxVeCZTSC1TWkp8=
 			</data>
 			<key>hash2</key>
 			<data>
-			46mI0hrdoMID0CbMFaeA66p9b1vGOZpXlnH2hpnxR1k=
+			4YcVLkK7Q5d08BElJsrEWN14z+EmK7qokdvyOfJw7PI=
 			</data>
 		</dict>
 		<key>Headers/ZaloSDKDefine.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			it3+TiSRnFmio5a2+SLFYwrPApM=
+			1Q9pEq9gPbUKOcEpDvOtabf38Vc=
 			</data>
 			<key>hash2</key>
 			<data>
-			aLbouFvu0RB2Q2Ncb1p7yYyRq03meBTukJyofpPMjgo=
+			wxDJtKfZsFiyJZRA7CABPiOYTUnYXTCKrgrahD1nqSk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

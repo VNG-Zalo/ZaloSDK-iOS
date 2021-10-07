@@ -71,4 +71,14 @@ _Pragma("clang diagnostic pop") \
 #define DICT_VALUE(obj) ([obj isKindOfClass:[NSDictionary class]] ? obj : nil)
 #define ARRAY_VALUE(obj) ([obj isKindOfClass:[NSArray class]] ? obj : nil)
 
+#define runAfter(delay, block)  dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delay * NSEC_PER_SEC)), dispatch_get_main_queue(), ^block);
+#define safeExec(block, ...)    block ? block(__VA_ARGS__) : nil
+#define IS_EMPTY_STRING(str)            !IS_NONEMPTY_STRING(str)
+#define IS_NONEMPTY_STRING(str)      (str && [str isKindOfClass:[NSString class]] && ((NSString*)str).length>0)
+#define CHECK_CLASS(obj, Type)       ([obj isKindOfClass:[Type class]])
+#define CHECK_NULL_CLASS(obj, Type)  (obj && CHECK_CLASS(obj,Type))
+#define IS_EMPTY_NSARRAY(array)            !IS_NONEMPTY_NSARRAY(array)
+#define IS_NONEMPTY_NSARRAY(array)      (array && [array isKindOfClass:[NSArray class]] && ((NSArray*)array).count>0)
+
+
 #endif /* ZDKMacros_h */

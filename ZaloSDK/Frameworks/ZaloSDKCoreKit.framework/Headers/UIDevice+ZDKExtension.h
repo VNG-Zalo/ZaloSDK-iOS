@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ZDKConstants.h"
 
 @interface UIDevice (ZDKExtension)
 
@@ -44,4 +45,5 @@
  */
 - (NSDictionary *) zdkDeviceIdDictionary:(BOOL)usingIDFAEnabled;
 
+- (ZDKNetworkType)zdkMobileNetworkTypeInEnum;
 @end

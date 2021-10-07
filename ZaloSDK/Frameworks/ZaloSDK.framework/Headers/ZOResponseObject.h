@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ZOZaloError.h"
 #import "ZaloSDKDefine.h"
 /**
  Response object from Zalo.
@@ -26,14 +25,14 @@
  */
 @property (nonatomic, strong) NSString* errorMessage;
 @property (nonatomic, assign) NSInteger errorCode;
+@property (nonatomic, assign) NSInteger extCode;
 @property (nonatomic, getter=isSucess) BOOL success;
 
 @property (nonatomic, strong) NSString* errorDescription DEPRECATED_MSG_ATTRIBUTE("use errorMessage instead.");
-;
+
 @property (nonatomic, strong) NSString* errorReason  DEPRECATED_MSG_ATTRIBUTE("use errorMessage instead.");
-;
+
 @property (nonatomic, strong) NSString* errorName DEPRECATED_MSG_ATTRIBUTE("use errorMessage instead.");
-;
 
 -(id) initWithDictionary:(NSDictionary*) dictionary;
 -(id) initUnknowExceptionResponseObject;

@@ -7,8 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface ZDKApplication : NSObject
-+ (instancetype) sharedApplication;
-- (BOOL) openURL: (NSURL *) url;
++ (instancetype)sharedApplication;
+
+- (BOOL)canOpenURL:(NSURL *)url;
+
+- (void)openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenExternalURLOptionsKey, id> *_Nonnull)options completionHandler:(void (^ __nullable)(BOOL success))completion;
 @end

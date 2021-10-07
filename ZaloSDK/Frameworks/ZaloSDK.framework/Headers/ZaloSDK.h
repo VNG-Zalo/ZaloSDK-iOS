@@ -8,7 +8,6 @@
 // SDK Version: 2.5.0618
 
 #import <ZaloSDK/ZOResponseObject.h>
-#import <ZaloSDK/ZOZaloError.h>
 #import <ZaloSDK/ZaloSDKDefine.h>
 #import <ZaloSDK/ZOOauthResponseObject.h>
 #import <ZaloSDK/ZORequestPermissionResponseObject.h>
@@ -20,3 +19,4 @@
 #import <ZaloSDK/ZDK.h>
 #import <ZaloSDK/ZOFeed.h>
 #import <ZaloSDK/ZDKConfig.h>
+#import <ZaloSDK/ZDKDebug.h>

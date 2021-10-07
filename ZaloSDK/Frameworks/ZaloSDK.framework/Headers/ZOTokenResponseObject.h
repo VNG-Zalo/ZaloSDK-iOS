@@ -14,9 +14,11 @@
 //#endif
 @interface ZOTokenResponseObject : ZOResponseObject{
      NSString* accessToken;
+    NSString *refreshToken;
     NSTimeInterval expriedTime;
 }
 @property (nonatomic, retain) NSString* accessToken;
+@property (nonatomic, retain) NSString* refreshToken;
 @property (nonatomic) NSTimeInterval expriedTime;
 -(id)initWithDictionary:(NSDictionary *)dictionary;
 @end

@@ -14,6 +14,7 @@
 @class ZOFeed;
 @class ZOShareResponseObject;
 @class ZDKConfig;
+@class ZOTokenResponseObject;
 
 @protocol ZOZaloApiDelegate;
 
@@ -35,7 +36,7 @@
  */
 + (instancetype) sharedInstance;
 - (NSString *) appId;
-- (NSString *) version;
+- (NSString *) getVersion;
 
 /**
  Initialize SDK with specific app id
@@ -49,36 +50,40 @@
 // Authenticate                     //
 //////////////////////////////////////
 
-/**
- check if authenticated.
- the handler will be called after verify will server
- if handler is nil, it won't verify with server
- @return YES if has cached oauth, this oauth hasn't verified with server
- */
-- (BOOL) isAuthenticatedZaloWithCompletionHandler: (void (^)(ZOOauthCheckingResponseObject* response)) handler;
-
 - (void) authenticateZaloWithAuthenType:(enum ZAZaloSDKAuthenType) type
                        parentController:(UIViewController *)parentController
+                          codeChallenge:(NSString*) codeChallenge
+                                extInfo:(NSDictionary *)extInfo
                                 handler:(void (^)(ZOOauthResponseObject* response))handler;
 
 - (void) authenticateZaloWithAuthenType:(enum ZAZaloSDKAuthenType) type
                        parentController:(UIViewController *)parentController
                           isShowLoading:(BOOL) isShow
+                          codeChallenge:(NSString*) codeChallenge
+                                extInfo:(NSDictionary *)extInfo
                                 handler:(void (^)(ZOOauthResponseObject* response))handler;
 /**
  Register zalo accoun
  */
 - (void) registZaloAccountWithParentController:(UIViewController *)parentController
+                                 codeChallenge:(NSString *)codeChallenge
+                                       extInfo:(NSDictionary *)extInfo
                                        handler:(void (^)(ZOOauthResponseObject *response)) handler;
 /**
  Login Zalo with facebook account
  */
-- (void) authenticateFacebookInController:(UIViewController *) controller withCompletionHandler: (void (^)(ZOOauthResponseObject* response)) handler;
+- (void) authenticateFacebookInController:(UIViewController *) controller
+                            codeChallenge:(NSString *)codeChallenge
+                                  extInfo:(NSDictionary *)extInfo
+                    withCompletionHandler: (void (^)(ZOOauthResponseObject* response)) handler;
 
 /**
 Login Zalo with facebook access token
 */
-- (void) authenticateWithFacebookAccessToken: (NSString *) accessToken withCompletionHandler:(void (^)(ZOOauthResponseObject *))handler;
+- (void) authenticateWithFacebookAccessToken: (NSString *) accessToken
+                               codeChallenge:(NSString *)codeChallenge
+                                     extInfo:(NSDictionary *)extInfo
+                       withCompletionHandler:(void (^)(ZOOauthResponseObject *))handler;
 - (void) setFacebookAppId: (NSString *) appId;
 - (void) setFacebookScopes: (NSArray<NSString *> *) scopes;
 /**
@@ -89,57 +94,59 @@ Login Zalo with facebook access token
 /**
 Login Zalo with Apple account
 */
-- (void) authenticateAppleInController:(UIViewController *) controller withCompletionHandler: (void (^)(ZOOauthResponseObject* response)) handler;
+- (void) authenticateAppleInController:(UIViewController *) controller
+                         codeChallenge:(NSString *)codeChallenge
+                               extInfo:(NSDictionary *)extInfo
+                 withCompletionHandler: (void (^)(ZOOauthResponseObject* response)) handler;
 
 /**
  Login Zalo with Google account
  */
 - (void) authenticateGoogleInController:(UIViewController *)controller
+                          codeChallenge:(NSString *)codeChallenge
+                                extInfo:(NSDictionary *)extInfo
                                 handler:(void (^)(ZOOauthResponseObject * response))handler;
-/**
- Default is YES
- **/
-- (void) setAllowsSignInGoogleWithBrowser: (BOOL) yesOrNo;
+
 /**
  Login Zalo with Guest account
  */
-- (void) authenticateGuestWithCompletionHandler:(void (^)(ZOOauthResponseObject * response))handler;
+- (void) authenticateGuestWithCodeChallenge:(NSString *)codeChallenge
+                               refreshToken:(NSString *)refreshToken
+                                    extInfo:(NSDictionary *)extInfo
+                          completionHandler:(void (^)(ZOOauthResponseObject * response))handler;
 
 /**
  Create zing me login view
  @param frame frame of the login view. Height should be at least 114 pixel
  @return ZingMeLoginView
  */
-- (ZOZingMeLoginView *) createZingMeLoginViewWithFrame: (CGRect) frame;
+- (ZOZingMeLoginView *) createZingMeLoginViewWithFrame: (CGRect) frame codeChallenge:(NSString *)codeChallenge extInfo:(NSDictionary *)extInfo;
 
 - (void) authenticateZingMeWithUsername: (NSString *) username
                                password: (NSString *) password
+                          codeChallenge:(NSString *)codeChallenge
+                                extInfo:(NSDictionary *)extInfo
                       completionHandler: (void (^)(ZOOauthResponseObject* response)) handler;
 
-/**
- Request permission in Zalo App
- */
-- (void) requestZaloPermission: (ZOPermission) permission
-          andCompletionHandler: (void (^)(ZORequestPermissionResponseObject* response)) handler;
+- (void)getAccessTokenWithOAuthCode:(NSString *)oauthCode
+                       codeVerifier:(NSString *)codeVerifier
+                  completionHandler: (void (^)(ZOTokenResponseObject* response)) handler;
+- (void)getAccessTokenWithOAuthCode:(NSString *)oauthCode
+                       codeVerifier:(NSString *)codeVerifier
+                            isGuest:(BOOL)isGuest
+                  completionHandler:(void (^)(ZOTokenResponseObject *))handler;
 
-/**
- Return Zalo Oauth code if authenticated, otherwise nil
- */
-- (NSString *) zaloOauthCode;
+- (void)getAccessTokenWithRefreshToken:(NSString *)refreshToken
+                     completionHandler: (void (^)(ZOTokenResponseObject* response)) handler;
+- (void)getAccessTokenWithRefreshToken:(NSString *)refreshToken
+                               isGuest:(BOOL)isGuest
+                     completionHandler: (void (^)(ZOTokenResponseObject* response)) handler;
 
-
-/**
- Return Zalo User id if authenticated, otherwise nil
- */
-- (NSString *) zaloUserId;
+- (void)validateRefreshToken:(NSString *)refreshToken
+                     extInfo:(NSDictionary *)extInfo
+           completionHandler: (void (^)(ZOOauthResponseObject* response)) handler;
 
 - (ZOLoginType) lastLoginType;
-
-/**
- to unauthenticate.
- SDK clear oauth code in cache
- */
-- (void)unauthenticate;
 
 
 /**
@@ -157,37 +164,37 @@ typedef void (^ZOGraphCallback)(ZOGraphResponseObject* response);
 /**
  Get Zalo user profile
  */
-- (void) getZaloUserProfileWithCallback:(ZOGraphCallback) callback;
+- (void) getZaloUserProfileWithAccessToken:(NSString*) accessToken callback:(ZOGraphCallback) callback;
 
 /**
  Get Zalo user friend list by offset and count
  */
-- (void) getUserFriendListAtOffset:(NSUInteger) offset count:(NSUInteger) count callback:(ZOGraphCallback) callback;
+- (void) getUserFriendListAtOffset:(NSUInteger) offset count:(NSUInteger) count accessToken:(NSString*) accessToken callback:(ZOGraphCallback) callback;
 
 /**
  Get invitable Zalo user friend list
  */
-- (void) getUserInvitableFriendListAtOffset:(NSUInteger) offset count:(NSUInteger) count callback:(ZOGraphCallback) callback;
+- (void) getUserInvitableFriendListAtOffset:(NSUInteger) offset count:(NSUInteger) count accessToken:(NSString*) accessToken callback:(ZOGraphCallback) callback;
 
 /**
  Post feed
  */
-- (void) postFeedWithMessage:(NSString *) message link:(NSString *) link callback:(ZOGraphCallback) callback;
+- (void) postFeedWithMessage:(NSString *) message link:(NSString *) link accessToken:(NSString*) accessToken callback:(ZOGraphCallback) callback;
 
 /**
  Invite other user to use app
  */
-- (void) sendAppRequestTo:(NSString *) friendId message:(NSString *) message callback:(ZOGraphCallback) callback;
+- (void) sendAppRequestTo:(NSString *) friendId message:(NSString *) message accessToken:(NSString*) accessToken callback:(ZOGraphCallback) callback;
 
 /**
  Send message to a friend
  */
-- (void) sendMessageTo: (NSString *) friendId message:(NSString *) message link:(NSString *) link callback:(ZOGraphCallback) callback;
+- (void) sendMessageTo: (NSString *) friendId message:(NSString *) message link:(NSString *) link accessToken:(NSString*) accessToken callback:(ZOGraphCallback) callback;
 
 /**
  Send message onbehave of offical account
  */
-- (void) sendOfficalAccountMessageWith: (NSString *) templateName templateData:(NSDictionary *) templateData callback:(ZOGraphCallback) callback;
+- (void) sendOfficalAccountMessageWith: (NSString *) templateName templateData:(NSDictionary *) templateData accessToken:(NSString*) accessToken callback:(ZOGraphCallback) callback;
 
 /**
  Send graph api request with specific path and param
@@ -198,6 +205,7 @@ typedef void (^ZOGraphCallback)(ZOGraphResponseObject* response);
 - (void) userGraphWithPath:(NSString *) path
                     params:(NSDictionary *) data
                     method:(NSString *) method
+               accessToken:(NSString*) accessToken
                   callback:(ZOGraphCallback) callback;
 
 
@@ -221,7 +229,7 @@ typedef void (^ZOGraphCallback)(ZOGraphResponseObject* response);
 
 //This method is used to config sharing zalo using app or web
 //Default is ZOShareViaTypeAppOrWeb
-- (void)shareZaloUsing:(ZOShareViaType)type;
+//- (void)shareZaloUsing:(ZOShareViaType)type;
 
 // Disable option to post to user's wall when sharing with zalo app
 // Default is NO
@@ -249,10 +257,16 @@ typedef void (^ZOGraphCallback)(ZOGraphResponseObject* response);
 @interface ZaloSDK(Deprecated)
 
 
-- (void) authenticateZaloWithCompletionHandler: (void (^)(ZOOauthResponseObject* response)) handler __deprecated_msg("use method authenticateZaloWithAuthenType:parentController:handler instead.");
+- (void) authenticateZaloWithCodeChallenge:(NSString*) codeChallenge
+                                   extInfo:(NSDictionary *)extInfo
+                         completionHandler: (void (^)(ZOOauthResponseObject* response)) handler __deprecated_msg("use method authenticateZaloWithAuthenType:parentController:handler instead.");
 
 - (void) authenticateZaloWithAuthenType:(enum ZAZaloSDKAuthenType) type
-                   andCompletionHandler: (void (^)(ZOOauthResponseObject* response)) handler __deprecated_msg("use method authenticateZaloWithAuthenType:parentController:handler instead.");
+                          codeChallenge:(NSString*) codeChallenge
+                                extInfo:(NSDictionary *)extInfo
+                      completionHandler: (void (^)(ZOOauthResponseObject* response)) handler __deprecated_msg("use method authenticateZaloWithAuthenType:parentController:handler instead.");
 
-- (void) authenticateFacebookWithCompletionHandler: (void (^)(ZOOauthResponseObject* response)) handler __deprecated_msg("use method authenticateFacebookInController:withCompletionHandler: instead.");
+- (void) authenticateFacebookWithCodeChallenge:(NSString*) codeChallenge
+                                       extInfo:(NSDictionary *)extInfo
+                             completionHandler: (void (^)(ZOOauthResponseObject* response)) handler __deprecated_msg("use method authenticateFacebookInController:withCompletionHandler: instead.");
 @end

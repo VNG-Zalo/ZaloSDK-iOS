@@ -151,7 +151,8 @@ struct OpenAPIDemoDataSource {
 class GetProfileExecutor : OpenAPIExecutor {
     static let Params: [OpenAPIParam] = []
     func execute(params: [String : Any?], callback: @escaping ZOGraphCallback) {
-        ZaloSDK.sharedInstance().getZaloUserProfile(callback: callback)
+        // TODO
+//        ZaloSDK.sharedInstance().getZaloUserProfile(callback: callback)
     }
 }
 
@@ -163,7 +164,8 @@ class GetFriendListExecutor : OpenAPIExecutor {
     func execute(params: [String : Any?], callback: @escaping ZOGraphCallback) {
         let offset = UInt(params["offset"] as? String ?? "") ?? 0
         let limit = UInt(params["limit"] as? String ?? "") ?? 50
-        ZaloSDK.sharedInstance().getUserFriendList(atOffset: offset, count: limit, callback: callback)
+        // TODO
+//        ZaloSDK.sharedInstance().getUserFriendList(atOffset: offset, count: limit, callback: callback)
     }
 }
 
@@ -175,7 +177,8 @@ class GetInvitableFriendListExecutor : OpenAPIExecutor {
     func execute(params: [String : Any?], callback: @escaping ZOGraphCallback) {
         let offset = UInt(params["offset"] as? String ?? "") ?? 0
         let limit = UInt(params["limit"] as? String ?? "") ?? 50
-        ZaloSDK.sharedInstance().getUserInvitableFriendList(atOffset: offset, count: limit, callback: callback)
+        // TODO
+//        ZaloSDK.sharedInstance().getUserInvitableFriendList(atOffset: offset, count: limit, callback: callback)
     }
 }
 
@@ -187,7 +190,8 @@ class PostFeedExecutor : OpenAPIExecutor {
     func execute(params: [String : Any?], callback: @escaping ZOGraphCallback) {
         let message = params["message"] as? String ?? ""
         let link = params["link"] as? String ?? ""
-        ZaloSDK.sharedInstance().postFeed(withMessage: message, link: link, callback: callback)
+        // TODO
+//        ZaloSDK.sharedInstance().postFeed(withMessage: message, link: link, callback: callback)
     }
 }
 
@@ -201,7 +205,8 @@ class SendMessageExecutor : OpenAPIExecutor {
         let to = params["to"] as? String ?? ""
         let message = params["message"] as? String ?? ""
         let link = params["link"] as? String ?? ""
-        ZaloSDK.sharedInstance().sendMessage(to: to, message: message, link: link, callback: callback)
+        // TODO
+//        ZaloSDK.sharedInstance().sendMessage(to: to, message: message, link: link, callback: callback)
     }
 }
 
@@ -213,7 +218,8 @@ class SendAppRequestExecutor : OpenAPIExecutor {
     func execute(params: [String : Any?], callback: @escaping ZOGraphCallback) {
         let to = params["to"] as? String ?? ""
         let message = params["message"] as? String ?? ""
-        ZaloSDK.sharedInstance().sendAppRequest(to: to, message: message, callback: callback)
+        // TODO
+//        ZaloSDK.sharedInstance().sendAppRequest(to: to, message: message, callback: callback)
     }
 }
 
@@ -232,8 +238,8 @@ class SendOfficalAccountMessageExecutor : OpenAPIExecutor {
             let dict2 = dict1 as? [String: Any] {
             templateData = dict2
         }
-        
-        ZaloSDK.sharedInstance().sendOfficalAccountMessage(with: template, templateData: templateData, callback: callback)
+        // TODO
+//        ZaloSDK.sharedInstance().sendOfficalAccountMessage(with: template, templateData: templateData, callback: callback)
     }
 }
 

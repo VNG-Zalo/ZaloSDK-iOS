@@ -35,7 +35,7 @@ class LoginViewController: UIViewController {
 
 extension LoginViewController {
     func login() {
-        ZaloSDK.sharedInstance().authenticateZalo(with: ZAZAloSDKAuthenTypeViaZaloAppAndWebView, parentController: self) { (response) in
+        ZaloSDK.sharedInstance().authenticateZalo(with: ZAZAloSDKAuthenTypeViaZaloAppAndWebView, parentController: self, codeChallenge: Constant.CODE_CHALLENGE, extInfo: Constant.EXT_INFO) { (response) in
             self.onAuthenticateComplete(with: response)
         }
     }
@@ -44,13 +44,19 @@ extension LoginViewController {
         loadingIndicator.startAnimating()
         loginButton.isHidden = true
 
-        ZaloSDK.sharedInstance().isAuthenticatedZalo { (response) in
+        let refreshToken = UserDefaults.standard.string(forKey: UserDefaultsKeys.refreshToken.rawValue)
+        if let refreshToken = refreshToken {
+            ZaloSDK.sharedInstance().validateRefreshToken(refreshToken, extInfo: Constant.EXT_INFO) { (response) in
             self.loadingIndicator.stopAnimating()
-            if response?.isSucess == true {
-                self.showMainController()
-            } else {
-                self.loginButton.isHidden = false
+                if response?.isSucess == true {
+                    self.showMainController()
+                } else {
+                    self.loginButton.isHidden = false
+                }
             }
+        } else {
+            loadingIndicator.stopAnimating()
+            loginButton.isHidden = false
         }
     }
     
@@ -59,10 +65,27 @@ extension LoginViewController {
         loginButton.isHidden = false
         
         if response?.isSucess == true {
-            showMainController()
+            getAccessTokenFromOAuthCode(response?.oauthCode);
         } else if let response = response,
              response.errorCode != -1001 { // not cancel
-            showAlert(with: "Error \(response.errorCode)", message: response.errorMessage)
+            showAlert(with: "Error \(response.errorCode)", message: response.errorMessage ?? "")
+        }
+    }
+
+    private func getAccessTokenFromOAuthCode(_ oauthCode: String?) {
+        ZaloSDK.sharedInstance().getAccessToken(withOAuthCode: oauthCode, codeVerifier: Constant.CODE_VERIFIER) { (tokenResponse) in
+            AccessTokenUtils.shared.saveTokenResponse(tokenResponse)
+            if let tokenResponse = tokenResponse {
+                print("""
+                      getAccessTokenFromOAuthCode:
+                      accessToken: \(tokenResponse.accessToken ?? "")
+                      refreshToken: \(tokenResponse.refreshToken ?? "")
+                      expriedTime: \(tokenResponse.expriedTime)
+                      """)
+                self.showMainController()
+            } else {
+                self.showAlert(with: "Get AccessToken from OauthCode error \(tokenResponse?.errorCode ?? ZaloSDKErrorCode.sdkErrorCodeUnknownException.rawValue)", message: tokenResponse?.errorMessage ?? "")
+            }
         }
     }
 }

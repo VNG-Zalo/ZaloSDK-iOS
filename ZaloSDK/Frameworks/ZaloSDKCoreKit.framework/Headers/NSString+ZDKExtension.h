@@ -11,6 +11,11 @@
 @interface NSString (ZDKExtension)
 
 + (NSString *)zdkEmptyIfNilString:(NSString *)str;
+
+/*
+ * Using to encode the value of the query param ONLY.
+ * DO NOT use zdkEncodeURLString("http://example.com") or zdkEncodeURLString("key=value")
+ */
 - (NSString *)zdkEncodeURLString;
 - (NSString *)zdkDecodedURLString;
 - (NSString *)zdkMd5;
@@ -39,4 +44,6 @@
 + (NSString *) zdkSigForParams: (NSDictionary *) params serectKey: (NSString *) serectKey;
 
 - (NSData *)zdkHexToData;
+
+- (BOOL)isNumeric;
 @end
