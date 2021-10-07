@@ -151,8 +151,11 @@ struct OpenAPIDemoDataSource {
 class GetProfileExecutor : OpenAPIExecutor {
     static let Params: [OpenAPIParam] = []
     func execute(params: [String : Any?], callback: @escaping ZOGraphCallback) {
-        // TODO
-//        ZaloSDK.sharedInstance().getZaloUserProfile(callback: callback)
+        AccessTokenUtils.shared.getAccessToken { (accessToken) in
+            if let accessToken = accessToken {
+                ZaloSDK.sharedInstance().getZaloUserProfile(withAccessToken: accessToken, callback: callback)
+            }
+        }
     }
 }
 
@@ -164,8 +167,11 @@ class GetFriendListExecutor : OpenAPIExecutor {
     func execute(params: [String : Any?], callback: @escaping ZOGraphCallback) {
         let offset = UInt(params["offset"] as? String ?? "") ?? 0
         let limit = UInt(params["limit"] as? String ?? "") ?? 50
-        // TODO
-//        ZaloSDK.sharedInstance().getUserFriendList(atOffset: offset, count: limit, callback: callback)
+        AccessTokenUtils.shared.getAccessToken { (accessToken) in
+            if let accessToken = accessToken {
+                ZaloSDK.sharedInstance().getUserFriendList(atOffset: offset, count: limit, accessToken: accessToken, callback: callback)
+            }
+        }
     }
 }
 
@@ -177,8 +183,11 @@ class GetInvitableFriendListExecutor : OpenAPIExecutor {
     func execute(params: [String : Any?], callback: @escaping ZOGraphCallback) {
         let offset = UInt(params["offset"] as? String ?? "") ?? 0
         let limit = UInt(params["limit"] as? String ?? "") ?? 50
-        // TODO
-//        ZaloSDK.sharedInstance().getUserInvitableFriendList(atOffset: offset, count: limit, callback: callback)
+        AccessTokenUtils.shared.getAccessToken { (accessToken) in
+            if let accessToken = accessToken {
+                ZaloSDK.sharedInstance().getUserInvitableFriendList(atOffset: offset, count: limit, accessToken: accessToken, callback: callback)
+            }
+        }
     }
 }
 
@@ -190,8 +199,11 @@ class PostFeedExecutor : OpenAPIExecutor {
     func execute(params: [String : Any?], callback: @escaping ZOGraphCallback) {
         let message = params["message"] as? String ?? ""
         let link = params["link"] as? String ?? ""
-        // TODO
-//        ZaloSDK.sharedInstance().postFeed(withMessage: message, link: link, callback: callback)
+        AccessTokenUtils.shared.getAccessToken { (accessToken) in
+            if let accessToken = accessToken {
+                ZaloSDK.sharedInstance().postFeed(withMessage: message, link: link, accessToken: accessToken, callback: callback)
+            }
+        }
     }
 }
 
@@ -205,8 +217,11 @@ class SendMessageExecutor : OpenAPIExecutor {
         let to = params["to"] as? String ?? ""
         let message = params["message"] as? String ?? ""
         let link = params["link"] as? String ?? ""
-        // TODO
-//        ZaloSDK.sharedInstance().sendMessage(to: to, message: message, link: link, callback: callback)
+        AccessTokenUtils.shared.getAccessToken { (accessToken) in
+            if let accessToken = accessToken {
+                ZaloSDK.sharedInstance().sendMessage(to: to, message: message, link: link, accessToken: accessToken, callback: callback)
+            }
+        }
     }
 }
 
@@ -218,8 +233,11 @@ class SendAppRequestExecutor : OpenAPIExecutor {
     func execute(params: [String : Any?], callback: @escaping ZOGraphCallback) {
         let to = params["to"] as? String ?? ""
         let message = params["message"] as? String ?? ""
-        // TODO
-//        ZaloSDK.sharedInstance().sendAppRequest(to: to, message: message, callback: callback)
+        AccessTokenUtils.shared.getAccessToken { (accessToken) in
+            if let accessToken = accessToken {
+                ZaloSDK.sharedInstance().sendAppRequest(to: to, message: message, accessToken: accessToken, callback: callback)
+            }
+        }
     }
 }
 
@@ -238,8 +256,11 @@ class SendOfficalAccountMessageExecutor : OpenAPIExecutor {
             let dict2 = dict1 as? [String: Any] {
             templateData = dict2
         }
-        // TODO
-//        ZaloSDK.sharedInstance().sendOfficalAccountMessage(with: template, templateData: templateData, callback: callback)
+        AccessTokenUtils.shared.getAccessToken { (accessToken) in
+            if let accessToken = accessToken {
+                ZaloSDK.sharedInstance().sendOfficalAccountMessage(with: template, templateData: templateData, accessToken: accessToken, callback: callback)
+            }
+        }
     }
 }
 
