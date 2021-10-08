@@ -19,10 +19,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         ZaloSDK.sharedInstance().initialize(withAppId: Constant.ZALO_APP_ID)
         return true
     }
-    func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
-        
+    
+    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
         /// 0b. Receive callback from zalo
-        return ZDKApplicationDelegate.sharedInstance().application(application, open: url, sourceApplication: sourceApplication, annotation: annotation)
+        return ZDKApplicationDelegate.sharedInstance().application(app, open: url, options: options)
     }
 }
 
