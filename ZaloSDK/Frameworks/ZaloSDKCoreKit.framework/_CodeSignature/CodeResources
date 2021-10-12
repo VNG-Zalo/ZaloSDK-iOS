@@ -54,7 +54,7 @@
 		</data>
 		<key>Headers/ZDKConstants.h</key>
 		<data>
-		OUnkL4L5UAl1AIR80lEeah6FNE0=
+		Oc6bFCvu4rVLOTaYMJCgHKB+9Uc=
 		</data>
 		<key>Headers/ZDKDeviceTracker.h</key>
 		<data>
@@ -106,7 +106,7 @@
 		</data>
 		<key>Headers/ZDKZaloError.h</key>
 		<data>
-		VvL2CmE9zy/TF16OByy3VWds0aY=
+		CY6eA+DYUBJ1zMb1U/EEkdymUE0=
 		</data>
 		<key>Headers/ZOReachability+SharedInstance.h</key>
 		<data>
@@ -122,7 +122,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		1PEBX1bjZ/WP6qWZxqvp3mLWltE=
+		GvAmwdFihkm+MoO6SUVlzMXi+2E=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -267,11 +267,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			OUnkL4L5UAl1AIR80lEeah6FNE0=
+			Oc6bFCvu4rVLOTaYMJCgHKB+9Uc=
 			</data>
 			<key>hash2</key>
 			<data>
-			so1bSW98QTLnjf2Y3EXRaiGDgJ06jZa+05ybQbpCQ+8=
+			+x+z+fAT/J2WJVYrgZt6i6JO6lZbz9maUlR2Q8smUwE=
 			</data>
 		</dict>
 		<key>Headers/ZDKDeviceTracker.h</key>
@@ -410,11 +410,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			VvL2CmE9zy/TF16OByy3VWds0aY=
+			CY6eA+DYUBJ1zMb1U/EEkdymUE0=
 			</data>
 			<key>hash2</key>
 			<data>
-			PekxyV/LcYa+kz3X7n3qQrGxl+UZzlJsXEY46wLoHeQ=
+			tC0zzLsVF7ooTEVoSKj1/o9mTxu5qRJm6n2QBAstdko=
 			</data>
 		</dict>
 		<key>Headers/ZOReachability+SharedInstance.h</key>

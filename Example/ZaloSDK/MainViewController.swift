@@ -35,6 +35,7 @@ class MainViewController: UITableViewController {
 extension MainViewController {
     func logout() {
         AccessTokenUtils.shared.logout()
+        ZaloSDK.sharedInstance().unauthenticate()
     }
     
     func showProfile() {

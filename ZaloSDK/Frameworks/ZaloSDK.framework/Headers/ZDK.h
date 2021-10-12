@@ -148,6 +148,7 @@ Login Zalo with Apple account
 
 - (ZOLoginType) lastLoginType;
 
+- (void)unauthenticate;
 
 /**
  Call this method in applicationDidBecomeActive:

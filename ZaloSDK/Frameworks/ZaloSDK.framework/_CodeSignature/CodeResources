@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/ZDK.h</key>
 		<data>
-		uiZvubO33iBPnUuKvoezlJCh4zE=
+		bMTwZ+BKNKF+sa+QzB9cna8JGO8=
 		</data>
 		<key>Headers/ZDKConfig.h</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Headers/ZOLoginViewController.h</key>
 		<data>
-		twx1H3YnORGe8qiQXMJSIiMuUqU=
+		r1mfzP03DtkXThGrMRIiSwE7jRI=
 		</data>
 		<key>Headers/ZOOauthResponseObject.h</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		UN6MWbeKLzJ1Mmza21fT23b7i8Q=
+		j0ffvdp/M6KDl+PNxiLKNGhPZ0I=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -75,11 +75,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			uiZvubO33iBPnUuKvoezlJCh4zE=
+			bMTwZ+BKNKF+sa+QzB9cna8JGO8=
 			</data>
 			<key>hash2</key>
 			<data>
-			fQX9ogn2rmp3Y01SxrUwqKcpGXzmrsVrt9Zay1IMXjM=
+			GEgwQV1oB0Lp8syTkZFc+Pleum0uWWUMzeAhEgAau+8=
 			</data>
 		</dict>
 		<key>Headers/ZDKConfig.h</key>
@@ -130,11 +130,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			twx1H3YnORGe8qiQXMJSIiMuUqU=
+			r1mfzP03DtkXThGrMRIiSwE7jRI=
 			</data>
 			<key>hash2</key>
 			<data>
-			XkeDf27F2IOjqJJZGsP6f+pyd8e7D7szE/w6WfgZdg4=
+			Kzq9UcNkvdZqZwUnTREoIaokcjw9ea6R7XdAQK3RIhE=
 			</data>
 		</dict>
 		<key>Headers/ZOOauthResponseObject.h</key>

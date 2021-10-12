@@ -295,6 +295,7 @@ typedef NS_ENUM(NSInteger, ServerGraphAPIErrorCode) {
 #pragma mark Custom Error Message
 static NSString *const kZaloErrorMessageInvalidState = @"Invalid State";
 static NSString *const kZaloSDKErrorMessageInvalidAccessToken = @"Invalid AccessToken";
+static NSString *const kZaloSDKErrorMessageInvalidOauthCode = @"Invalid OauthCode";
 static NSString *const kZaloSDKErrorMessageInvalidRefreshToken = @"Invalid RefreshToken";
 
 #endif

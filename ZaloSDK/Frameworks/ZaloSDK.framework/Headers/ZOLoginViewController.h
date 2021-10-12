@@ -65,6 +65,7 @@ didAuthenticateWithResponse:(ZOOauthResponseObject *)response;
 @property (strong, nonatomic) NSDictionary *extInfo;
 @property (weak, nonatomic) id<ZOLoginViewControllerDelegate> delegate;
 @property (assign, nonatomic) BOOL isAccountProtectForm;
+@property (assign, nonatomic) BOOL isCanceledOnTouchOutside;
 
 - (void) showInParentController:(UIViewController *) parentController;
 - (void) hide;
