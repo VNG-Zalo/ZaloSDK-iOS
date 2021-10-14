@@ -10,7 +10,7 @@
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
-iOS 8+
+iOS 9+
 
 ## Document
 http://developers.zalo.me/docs/sdk/ios-sdk-196
@@ -23,10 +23,6 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod 'ZaloSDK'
 ```
-
-## Author
-
-acct<blob>=<NULL>, liemvouy@gmail.com
 
 ## License
 
