@@ -13,7 +13,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 iOS 8+
 
 ## Document
-http://developers.zalo.me/docs/sdk/ios-sdk-9
+http://developers.zalo.me/docs/sdk/ios-sdk-196
 
 ## Installation
 
