@@ -35,7 +35,8 @@ class LoginViewController: UIViewController {
 
 extension LoginViewController {
     func login() {
-        ZaloSDK.sharedInstance().authenticateZalo(with: ZAZAloSDKAuthenTypeViaZaloAppAndWebView, parentController: self, codeChallenge: Constant.CODE_CHALLENGE, extInfo: Constant.EXT_INFO) { (response) in
+        AuthenUtils.shared.renewPKCECode()
+        ZaloSDK.sharedInstance().authenticateZalo(with: ZAZAloSDKAuthenTypeViaZaloAppAndWebView, parentController: self, codeChallenge: AuthenUtils.shared.getCodeChallenge(), extInfo: Constant.EXT_INFO) { (response) in
             self.onAuthenticateComplete(with: response)
         }
     }
@@ -73,8 +74,8 @@ extension LoginViewController {
     }
 
     private func getAccessTokenFromOAuthCode(_ oauthCode: String?) {
-        ZaloSDK.sharedInstance().getAccessToken(withOAuthCode: oauthCode, codeVerifier: Constant.CODE_VERIFIER) { (tokenResponse) in
-            AccessTokenUtils.shared.saveTokenResponse(tokenResponse)
+        ZaloSDK.sharedInstance().getAccessToken(withOAuthCode: oauthCode, codeVerifier: AuthenUtils.shared.getCodeVerifier()) { (tokenResponse) in
+            AuthenUtils.shared.saveTokenResponse(tokenResponse)
             if let tokenResponse = tokenResponse {
                 print("""
                       getAccessTokenFromOAuthCode:

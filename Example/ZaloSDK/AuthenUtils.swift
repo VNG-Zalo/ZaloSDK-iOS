@@ -6,10 +6,13 @@
 import Foundation
 import ZaloSDK
 
-class AccessTokenUtils {
+class AuthenUtils {
 
-    static let shared = AccessTokenUtils()
+    static let shared = AuthenUtils()
     var tokenResponse: ZOTokenResponseObject?
+    var codeChallenage = ""
+    var codeVerifier = ""
+    
 
     func getAccessToken(_ completionHandler: @escaping (String?) -> ()) {
         let now = TimeInterval(Date().timeIntervalSince1970 - 10)
@@ -44,5 +47,18 @@ class AccessTokenUtils {
             userDefault.removeObject(forKey: key.rawValue)
         }
         self.tokenResponse = nil
+    }
+    
+    func getCodeChallenge() -> String {
+        return self.codeChallenage
+    }
+    
+    func getCodeVerifier() -> String {
+        return self.codeVerifier
+    }
+    
+    func renewPKCECode() {
+        self.codeVerifier = generateCodeVerifier() ?? ""
+        self.codeChallenage = generateCodeChallenge(codeVerifier: self.codeVerifier) ?? ""
     }
 }

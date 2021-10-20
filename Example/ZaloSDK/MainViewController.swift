@@ -34,13 +34,13 @@ class MainViewController: UITableViewController {
 
 extension MainViewController {
     func logout() {
-        AccessTokenUtils.shared.logout()
+        AuthenUtils.shared.logout()
         ZaloSDK.sharedInstance().unauthenticate()
     }
     
     func showProfile() {
         profileLoadingIndicator.startAnimating()
-        AccessTokenUtils.shared.getAccessToken { (accessToken) in
+        AuthenUtils.shared.getAccessToken { (accessToken) in
             if let accessToken = accessToken {
                 ZaloSDK.sharedInstance().getZaloUserProfile(withAccessToken: accessToken) { (response) in
                     self.onLoad(profile: response)
