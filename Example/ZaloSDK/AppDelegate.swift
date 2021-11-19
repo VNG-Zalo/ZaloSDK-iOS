@@ -17,12 +17,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         /// 0a. Init zalo sdk
         ZaloSDK.sharedInstance().initialize(withAppId: Constant.ZALO_APP_ID)
+        _customNavigationBarForiOS15()
+        
         return true
     }
     
     func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
         /// 0b. Receive callback from zalo
         return ZDKApplicationDelegate.sharedInstance().application(app, open: url, options: options)
+    }
+    
+    func _customNavigationBarForiOS15() {
+        if #available(iOS 15.0, *) {
+            let navigationBarAppearance = UINavigationBarAppearance()
+            navigationBarAppearance.configureWithDefaultBackground()
+            navigationBarAppearance.backgroundColor = UIColor(red: 0, green: 143.0/255.0, blue: 243.0/255.0, alpha: 255/255.0)
+            UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white]
+            UINavigationBar.appearance().tintColor = .white;
+            UINavigationBar.appearance().standardAppearance = navigationBarAppearance
+            UINavigationBar.appearance().compactAppearance = navigationBarAppearance
+            UINavigationBar.appearance().scrollEdgeAppearance = navigationBarAppearance
+        }
+
     }
 }
 

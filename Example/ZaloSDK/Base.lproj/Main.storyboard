@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AfH-ap-c8M">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AfH-ap-c8M">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -50,24 +46,33 @@ Demo</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="XKp-aU-9ql">
-                                <rect key="frame" x="169" y="315" width="37" height="37"/>
+                                <rect key="frame" x="169" y="344.5" width="37" height="37"/>
                                 <color key="color" red="0.0" green="0.56078431370000004" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
                             </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Obh-R1-g24">
+                                <rect key="frame" x="166.5" y="316" width="42" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Obh-R1-g24" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="3bp-Bc-Mcy"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="KS1-vP-nrt" secondAttribute="bottom" constant="20" id="4Zm-78-LG1"/>
                             <constraint firstItem="XKp-aU-9ql" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="6Zm-u8-zV9"/>
                             <constraint firstItem="UbP-BE-Hwg" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" multiplier="0.75" id="FJu-dv-IzE"/>
                             <constraint firstAttribute="trailing" secondItem="KS1-vP-nrt" secondAttribute="trailing" constant="20" id="LvF-u1-wMr"/>
                             <constraint firstItem="KS1-vP-nrt" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="SyF-1T-45u"/>
-                            <constraint firstItem="XKp-aU-9ql" firstAttribute="top" secondItem="UbP-BE-Hwg" secondAttribute="bottom" constant="7" id="YYk-FN-D46"/>
                             <constraint firstItem="UbP-BE-Hwg" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="b7v-ro-32u"/>
+                            <constraint firstItem="Obh-R1-g24" firstAttribute="top" secondItem="UbP-BE-Hwg" secondAttribute="bottom" constant="8" symbolic="YES" id="rvd-Gx-fQe"/>
+                            <constraint firstItem="XKp-aU-9ql" firstAttribute="top" secondItem="Obh-R1-g24" secondAttribute="bottom" constant="8" symbolic="YES" id="wlm-lF-81K"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="SaO-J7-B1k"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
+                        <outlet property="lblVersion" destination="Obh-R1-g24" id="gFD-n8-SgD"/>
                         <outlet property="loadingIndicator" destination="XKp-aU-9ql" id="Klr-Pg-7JV"/>
                         <outlet property="loginButton" destination="KS1-vP-nrt" id="S13-Ma-Pd5"/>
                         <segue destination="0Ic-Cd-SzZ" kind="custom" identifier="showMainController" customClass="ClearNavigationStackSegue" customModule="ZaloSDK_Demo" customModuleProvider="target" id="Yqw-f7-H98"/>
@@ -89,7 +94,7 @@ Demo</string>
                             <tableViewSection id="AoP-OC-nVQ">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="fTa-p5-bhp">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                                        <rect key="frame" x="0.0" y="44.5" width="375" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fTa-p5-bhp" id="bBH-Bp-k6G">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
@@ -113,7 +118,7 @@ Demo</string>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="tsv-wm-dGt">
-                                                    <rect key="frame" x="178" y="40" width="20" height="20"/>
+                                                    <rect key="frame" x="177.5" y="40" width="20" height="20"/>
                                                     <color key="color" red="0.0" green="0.56078431370000004" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 </activityIndicatorView>
                                             </subviews>
@@ -130,7 +135,7 @@ Demo</string>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" shouldIndentWhileEditing="NO" rowHeight="60" id="aiD-Yd-1EJ">
-                                        <rect key="frame" x="0.0" y="100" width="375" height="60"/>
+                                        <rect key="frame" x="0.0" y="144.5" width="375" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aiD-Yd-1EJ" id="POK-SF-Wbd">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
@@ -154,7 +159,7 @@ Demo</string>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" shouldIndentWhileEditing="NO" rowHeight="60" id="xWD-5y-cEc">
-                                        <rect key="frame" x="0.0" y="160" width="375" height="60"/>
+                                        <rect key="frame" x="0.0" y="204.5" width="375" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xWD-5y-cEc" id="Qmb-IP-l2m">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
@@ -207,7 +212,7 @@ Demo</string>
                         <viewControllerLayoutGuide type="bottom" id="bji-O5-cnv"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="55Q-YW-gpi">
-                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -221,7 +226,7 @@ Demo</string>
         <!--Navigation Controller-->
         <scene sceneID="uNd-cr-cH0">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AfH-ap-c8M" sceneMemberID="viewController">
+                <navigationController extendedLayoutIncludesOpaqueBars="YES" automaticallyAdjustsScrollViewInsets="NO" id="AfH-ap-c8M" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="hXl-A2-2bf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -237,10 +242,10 @@ Demo</string>
             <point key="canvasLocation" x="145" y="35"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Ggg-ra-AbG"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="zalo-logo" width="36" height="36"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="diE-EB-IIo"/>
-    </inferredMetricsTieBreakers>
 </document>

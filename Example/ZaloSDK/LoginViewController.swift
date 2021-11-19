@@ -12,10 +12,12 @@ import ZaloSDK
 class LoginViewController: UIViewController {
     @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
     @IBOutlet weak var loginButton: UIButton!
-
+    @IBOutlet weak var lblVersion: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         loginButton.alignButtonIconAndTitle()
+        lblVersion.text = "ZaloSDK version: \(ZaloSDK.sharedInstance().getVersion() ?? "")"
         checkIsAuthenticated()
     }
     
