@@ -44,5 +44,7 @@
 @property(strong, nonatomic) NSString *socialId;
 @property(strong, nonatomic) NSString *refreshToken;
 
+@property(nonatomic, assign) BOOL isAuthenViaWebView;
+
 - (id)initWithDictionary:(NSDictionary *)dictionary;
 @end
