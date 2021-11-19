@@ -6,11 +6,11 @@
 	<dict>
 		<key>Headers/ZAMAnalytics.h</key>
 		<data>
-		PfykzEDo/OQw0JlzqhKf5PJxOh4=
+		EOhYmdw3c71ZvmZPyqnbj4vv+rU=
 		</data>
 		<key>Headers/ZAMDefines.h</key>
 		<data>
-		jmOV6utsLm5nYn7tgTIsSDbxKJc=
+		xFohVAzFewMROfvShUUtsbdCAKU=
 		</data>
 		<key>Headers/ZAMTrackedViewController.h</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		OPTiXQ9HUSLXQ7P6+VZGgrr6q3U=
+		nmNzI1/N5LD/RMsGnnO25DeN6Iw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -39,22 +39,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			PfykzEDo/OQw0JlzqhKf5PJxOh4=
+			EOhYmdw3c71ZvmZPyqnbj4vv+rU=
 			</data>
 			<key>hash2</key>
 			<data>
-			8TTnmVClnApPxnzKBF1A4VNpAeSDqybW0OuM3SVit7M=
+			tQ74bGEeDmShV1Klyw1uByeeb97SegIHJD439sCDivI=
 			</data>
 		</dict>
 		<key>Headers/ZAMDefines.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			jmOV6utsLm5nYn7tgTIsSDbxKJc=
+			xFohVAzFewMROfvShUUtsbdCAKU=
 			</data>
 			<key>hash2</key>
 			<data>
-			3KHPhJtbSkKsjhJ8u83K3oskdiLXJFX4k6/7XsQPYtc=
+			sOOCYyZGG6pp9lXVXhZQtWr8QUzRCwwAgAvWqq2ogco=
 			</data>
 		</dict>
 		<key>Headers/ZAMTrackedViewController.h</key>

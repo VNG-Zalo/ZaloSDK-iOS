@@ -82,14 +82,14 @@
 /**
  Add custom actioin event
  */
-- (void) addEventWithAction: (NSString *) action params: (NSDictionary *) params;
+- (void) addEventWithActionType: (ZAMEventActionType ) actionType params: (NSDictionary *) params;
 
 - (void) addException:(NSString *)name
                mesage:(NSString *)message
                reason:(NSString *)reason
            stacktrace:(NSString *)stacktrace;
 
-- (void) addEventWithAction:(NSString *)action
+- (void) addEventWithActionType: (ZAMEventActionType ) actionType
                    category: (NSString *) category
                       label: (NSString *) label
                       value: (NSNumber *) value;

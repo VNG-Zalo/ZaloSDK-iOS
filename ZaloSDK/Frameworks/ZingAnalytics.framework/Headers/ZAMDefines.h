@@ -31,5 +31,4 @@
 #define ZAMUserDefaults [NSUserDefaults standardUserDefaults]
 #define kZDKSDKDidFinishGetDeviceIdWithCallbackKeyNotification  @"kZDKSDKDidFinishGetDeviceIdWithCallbackKeyNotification"
 
-
 #endif

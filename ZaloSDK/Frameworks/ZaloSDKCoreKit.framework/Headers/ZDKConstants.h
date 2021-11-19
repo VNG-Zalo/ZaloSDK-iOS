@@ -51,8 +51,8 @@ static NSString *const ZDK_FROMSOURCE_ZALOAPP = @"2";
 
 static NSString *const ZDK_OS_iOS = @"2";
 
-static NSString *const ZDK_CORE_VERSION_NAME = @"4.0.1014";
-static NSString *const ZDK_CORE_VERSION_CODE = @"401014";
+static NSString *const ZDK_CORE_VERSION_NAME = @"4.0.1119";
+static NSString *const ZDK_CORE_VERSION_CODE = @"401119";
 
 static NSString *const kZDKSDKDidFinishGetSDKIDAndPrivateKeyNotification = @"kZDKSDKDidFinishGetSDKIDAndPrivateKeyNotification";
 static NSString *const kZDKSDKDidFinishGetDeviceIdWithCallbackKeyNotification = @"kZDKSDKDidFinishGetDeviceIdWithCallbackKeyNotification";
@@ -63,3 +63,37 @@ static NSString *const kZDKSDKDebugEventKeyNotification = @"kZDKSDKDebugEventKey
 
 static NSString *const ZDK_KEYCHAIN_ZALO_SERVICE_NAME = @"vn.vng.zalo.keychain.service";
 static NSString *const ZDK_KEYCHAIN_ZALO_GLOBAL_IDENTIFIER = @"zgid";
+
+typedef NS_ENUM(NSInteger, ZAMEventActionType) {
+    ZAMEventActionTypeUnknown = -1,
+    ZAMEventActionTypeOpenApp = 1,
+    ZAMEventActionTypeDeepLinking = 2,
+    ZAMEventActionTypeShare = 3,
+    ZAMEventActionTypeOpenAppByNotification = 4,
+    ZAMEventActionTypeReceiveNotification = 5,
+    ZAMEventActionTypePostFeed = 6,
+    ZAMEventActionTypeSendAppRequest = 7,
+    ZAMEventActionTypeSendMsg = 8,
+    ZAMEventActionTypeSendOaMsg = 9,
+    ZAMEventActionTypeGetFriend = 10,
+    ZAMEventActionTypeGetInvitableFriend = 11,
+    ZAMEventActionTypeGetProfile = 12,
+    ZAMEventActionTypeAuthen = 13,
+    ZAMEventActionTypeRecovery = 14,
+    ZAMEventActionTypeProtectAcc = 15,
+    ZAMEventActionTypeStartScreen = 16,
+    ZAMEventActionTypeEndScreen = 17,
+    ZAMEventActionTypeCrashLog = 18
+};
+
+static NSInteger const ZAMEventSubActionTypeAuthenViaZaloApp = 1;
+static NSInteger const ZAMEventSubActionTypeAuthenViaZaloWeb = 2;
+static NSInteger const ZAMEventSubActionTypeAuthenViaGooglePlus = 3;
+static NSInteger const ZAMEventSubActionTypeAuthenViaZingMe = 4;
+static NSInteger const ZAMEventSubActionTypeAuthenViaFacebook = 5;
+static NSInteger const ZAMEventSubActionTypeAuthenViaGuest = 6;
+static NSInteger const ZAMEventSubActionTypeAuthenViaApple = 7;
+static NSInteger const ZAMEventSubActionTypeRecoveryPassMail = 1;// API Path: forgot-passwd-guest
+static NSInteger const ZAMEventSubActionTypeRecoveryGuestAcc = 2;// API Path: recover-guest
+static NSInteger const ZAMEventSubActionTypeProtectAccMail = 1;
+static NSInteger const ZAMEventSubActionTypeProtectAccCMND = 2;
