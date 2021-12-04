@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2B21E8B928F8B417201DE497 /* Pods_ZaloSDK_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8579471D8DF1C1DCF042AF12 /* Pods_ZaloSDK_Demo.framework */; };
 		50BBBFEE1BC9569961DD5DA5 /* Pods_ZaloSDK_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C89F74A08D2AD461E4FC17F8 /* Pods_ZaloSDK_Tests.framework */; };
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
@@ -28,6 +27,7 @@
 		A024A0683E032080132EA537 /* AuthenUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A024A6F6880C362AD906B59E /* AuthenUtils.swift */; };
 		A024AB35445630FD3C95888E /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A024A994DB4A58628726F798 /* Constant.swift */; };
 		C05FBCE8271FBF2B0027F1DE /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05FBCE7271FBF2B0027F1DE /* Utils.swift */; };
+		E6640402D42DE161AC64A44D /* Pods_ZaloSDK_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8579471D8DF1C1DCF042AF12 /* Pods_ZaloSDK_Demo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,7 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B21E8B928F8B417201DE497 /* Pods_ZaloSDK_Demo.framework in Frameworks */,
+				E6640402D42DE161AC64A44D /* Pods_ZaloSDK_Demo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -526,6 +526,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZaloSDK_Example.app/ZaloSDK_Example";
@@ -546,6 +547,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
 				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZaloSDK_Example.app/ZaloSDK_Example";
@@ -567,9 +569,10 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = CVB6BX97VM;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = ZaloSDK/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.vng.zalo.ZaloSDKDemo;
@@ -595,11 +598,13 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = CVB6BX97VM;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = ZaloSDK/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.vng.zalo.ZaloSDKDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";

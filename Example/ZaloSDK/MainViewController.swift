@@ -65,11 +65,11 @@ extension MainViewController {
         }
         
         profileLabel.text = "\(name)\n\(id)\n\(gender)"
-        Alamofire.request(url).responseData { [self] (response) in
-            if case .success(let data) = response.result {
-                let image = UIImage(data: data)
-                profileImageView.image = image
-            }
-        }
+//        Alamofire.request(url).responseData { [self] (response) in
+//            if case .success(let data) = response.result {
+//                let image = UIImage(data: data)
+//                profileImageView.image = image
+//            }
+//        }
     }
 }

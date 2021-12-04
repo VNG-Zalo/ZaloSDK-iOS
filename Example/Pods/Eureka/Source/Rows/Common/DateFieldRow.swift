@@ -25,7 +25,7 @@
 import Foundation
 import UIKit
 
-public protocol DatePickerRowProtocol: class {
+public protocol DatePickerRowProtocol: AnyObject {
     var minimumDate: Date? { get set }
     var maximumDate: Date? { get set }
     var minuteInterval: Int? { get set }
@@ -89,7 +89,7 @@ open class DateCell: Cell<Date>, CellType {
         return datePicker
     }
 
-    @objc func datePickerValueChanged(_ sender: UIDatePicker) {
+    @objc(pickerDateChanged:) func datePickerValueChanged(_ sender: UIDatePicker) {
         row.value = sender.date
         detailTextLabel?.text = row.displayValueFor?(row.value)
     }

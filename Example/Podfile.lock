@@ -1,25 +1,24 @@
 PODS:
-  - Alamofire (4.5.1)
-  - AlamofireImage (3.3.0):
-    - Alamofire (~> 4.5)
-  - Eureka (5.3.1)
-  - ZaloSDK (2.6.1015):
-    - ZaloSDK/Core (= 2.6.1015)
-    - ZaloSDK/Main (= 2.6.1015)
-  - ZaloSDK/Core (2.6.1015)
-  - ZaloSDK/Main (2.6.1015):
+  - Alamofire (5.4.4)
+  - AlamofireImage (4.2.0):
+    - Alamofire (~> 5.4)
+  - Eureka (5.3.4)
+  - ZaloSDK (4.0.1204):
+    - ZaloSDK/Core (= 4.0.1204)
+    - ZaloSDK/Main (= 4.0.1204)
+  - ZaloSDK/Core (4.0.1204)
+  - ZaloSDK/Main (4.0.1204):
     - ZaloSDK/Core
 
 DEPENDENCIES:
-  - AlamofireImage (~> 3.3)
-  - Eureka (~> 5.3.1)
+  - AlamofireImage (~> 4.2.0)
+  - Eureka (~> 5.3.4)
   - ZaloSDK (from `../`)
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  trunk:
     - Alamofire
     - AlamofireImage
-  trunk:
     - Eureka
 
 EXTERNAL SOURCES:
@@ -27,11 +26,11 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
-  AlamofireImage: 2e784dc5d00f04903a52c1d169181469c805c3df
-  Eureka: 859877ab1e85661b6b7e810015d430e937d9cc7d
-  ZaloSDK: c1e077cb7b31ef46affadfb4bd2b16ce7b3d95d6
+  Alamofire: f3b09a368f1582ab751b3fff5460276e0d2cf5c9
+  AlamofireImage: 34a2d90b0e5fe6a5605f85ae4b7b01e784c60192
+  Eureka: 60cf058f86a8fb3ed26165ba5292b9850361b0a6
+  ZaloSDK: d9dc3ef835ed176cbc9219033809f721cc7d8083
 
-PODFILE CHECKSUM: ac6e782ea03c41d4e3a6e50c9887917ec67ddc71
+PODFILE CHECKSUM: 1d490c506da50f5d62a58ab4ca2a767febbf0060
 
-COCOAPODS: 1.10.0
+COCOAPODS: 1.11.2
