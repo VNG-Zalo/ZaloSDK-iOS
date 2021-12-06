@@ -3,11 +3,11 @@ PODS:
   - AlamofireImage (4.2.0):
     - Alamofire (~> 5.4)
   - Eureka (5.3.4)
-  - ZaloSDK (4.0.1204):
-    - ZaloSDK/Core (= 4.0.1204)
-    - ZaloSDK/Main (= 4.0.1204)
-  - ZaloSDK/Core (4.0.1204)
-  - ZaloSDK/Main (4.0.1204):
+  - ZaloSDK (4.0.1206):
+    - ZaloSDK/Core (= 4.0.1206)
+    - ZaloSDK/Main (= 4.0.1206)
+  - ZaloSDK/Core (4.0.1206)
+  - ZaloSDK/Main (4.0.1206):
     - ZaloSDK/Core
 
 DEPENDENCIES:
@@ -29,7 +29,7 @@ SPEC CHECKSUMS:
   Alamofire: f3b09a368f1582ab751b3fff5460276e0d2cf5c9
   AlamofireImage: 34a2d90b0e5fe6a5605f85ae4b7b01e784c60192
   Eureka: 60cf058f86a8fb3ed26165ba5292b9850361b0a6
-  ZaloSDK: d9dc3ef835ed176cbc9219033809f721cc7d8083
+  ZaloSDK: 1ead128a6fe6328f9dba1dae458f80b1d2953687
 
 PODFILE CHECKSUM: 1d490c506da50f5d62a58ab4ca2a767febbf0060
 

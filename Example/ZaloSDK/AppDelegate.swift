@@ -15,6 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
+        print("\(ZaloSDK.sharedInstance().getVersion() ?? "")")
         /// 0a. Init zalo sdk
         ZaloSDK.sharedInstance().initialize(withAppId: Constant.ZALO_APP_ID)
         _customNavigationBarForiOS15()
