@@ -1,4 +1,23 @@
 ===========================
+4.0.1206
+===========================
+- Support simulator for M1
+
+===========================
+4.0.1119
+===========================
+- Thêm track log cho các funtion và open api. Trước đây chỉ có log "open_app" và "deep_linking"
+- Fix bug:
++ Trên iOS 15, khi build bằng XCode 13 thì bị lỗi Back Navigation Bar.
++ Khi authen bằng Zalo App, khi authen xong và đẩy callback về cho app ngay, lúc này app đi lấy accessToken ngay thì bị lỗi vì app chưa kịp active. (Lỗi bên MOI+ report, iOS 12)
+
+===========================
+4.0.1014 [Big Upddate]
+===========================
+- Update SDK theo đúng chuẩn Oauth 2.0
+- Thay đổi toàn bộ flow login và get profile.
+
+===========================
 2.5.1009
 ===========================
 - ZaloSDK
