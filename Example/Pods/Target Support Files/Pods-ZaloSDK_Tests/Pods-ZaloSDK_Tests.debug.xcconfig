@@ -1,6 +1,5 @@
 CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO
-EXCLUDED_ARCHS[sdk=iphonesimulator*] = arm64
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Alamofire" "${PODS_CONFIGURATION_BUILD_DIR}/AlamofireImage" "${PODS_CONFIGURATION_BUILD_DIR}/Eureka" "${PODS_ROOT}/../../ZaloSDK/Frameworks"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Alamofire" "${PODS_CONFIGURATION_BUILD_DIR}/AlamofireImage" "${PODS_CONFIGURATION_BUILD_DIR}/Eureka" "${PODS_ROOT}/../../ZaloSDK/Frameworks" "${PODS_XCFRAMEWORKS_BUILD_DIR}/ZaloSDK/Core" "${PODS_XCFRAMEWORKS_BUILD_DIR}/ZaloSDK/Main"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
 HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Alamofire/Alamofire.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/AlamofireImage/AlamofireImage.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/Eureka/Eureka.framework/Headers"
 OTHER_LDFLAGS = $(inherited) -framework "Alamofire" -framework "AlamofireImage" -framework "Eureka" -framework "Foundation" -framework "UIKit"
