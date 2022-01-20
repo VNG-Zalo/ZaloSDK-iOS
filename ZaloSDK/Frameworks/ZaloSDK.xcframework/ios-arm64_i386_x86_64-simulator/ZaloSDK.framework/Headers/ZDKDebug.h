@@ -20,7 +20,8 @@ typedef NS_ENUM(NSInteger, ZDKDebugEventType) {
     kZDKDebugEventTypeGuestRecoverAccountWithEmail,
     kZDKDebugEventTypeGuestProtectAccountWithCMND,
     kZDKDebugEventTypeDidGetAccessToken,
-    kZDKDebugEventTypeDidValidatedRefreshToken
+    kZDKDebugEventTypeDidValidatedRefreshToken,
+    kZDKDebugEventTypeDidValidatedGuestSession
 };
 @interface ZDKDebug : NSObject
 + (instancetype) sharedInstance;

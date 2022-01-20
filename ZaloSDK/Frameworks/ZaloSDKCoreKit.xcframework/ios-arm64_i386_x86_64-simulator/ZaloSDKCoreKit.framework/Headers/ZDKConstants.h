@@ -51,8 +51,8 @@ static NSString *const ZDK_FROMSOURCE_ZALOAPP = @"2";
 
 static NSString *const ZDK_OS_iOS = @"2";
 
-static NSString *const ZDK_CORE_VERSION_NAME = @"4.0.1206";
-static NSString *const ZDK_CORE_VERSION_CODE = @"401206";
+static NSString *const ZDK_CORE_VERSION_NAME = @"4.1.0120";
+static NSString *const ZDK_CORE_VERSION_CODE = @"410120";
 
 static NSString *const kZDKSDKDidFinishGetSDKIDAndPrivateKeyNotification = @"kZDKSDKDidFinishGetSDKIDAndPrivateKeyNotification";
 static NSString *const kZDKSDKDidFinishGetDeviceIdWithCallbackKeyNotification = @"kZDKSDKDidFinishGetDeviceIdWithCallbackKeyNotification";

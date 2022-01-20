@@ -111,7 +111,7 @@ Login Zalo with Apple account
  Login Zalo with Guest account
  */
 - (void) authenticateGuestWithCodeChallenge:(NSString *)codeChallenge
-                               refreshToken:(NSString *)refreshToken
+                               guestSession:(NSString *)guestSession
                                     extInfo:(NSDictionary *)extInfo
                           completionHandler:(void (^)(ZOOauthResponseObject * response))handler;
 
@@ -146,6 +146,10 @@ Login Zalo with Apple account
                      extInfo:(NSDictionary *)extInfo
            completionHandler: (void (^)(ZOOauthResponseObject* response)) handler;
 
+- (void)validateGuestSession:(NSString * _Nonnull)guestSession
+                     extInfo:(NSDictionary * _Nullable)extInfo
+           completionHandler: (void (^ _Nullable)(ZOOauthResponseObject* _Nonnull response)) handler;
+
 - (ZOLoginType) lastLoginType;
 
 - (void)unauthenticate;
@@ -160,7 +164,7 @@ Login Zalo with Apple account
 //////////////////////////////////////
 // Open APIs                        //
 //////////////////////////////////////
-typedef void (^ZOGraphCallback)(ZOGraphResponseObject* response);
+typedef void (^ZOGraphCallback)(ZOGraphResponseObject* _Nullable response);
 
 /**
  Get Zalo user profile

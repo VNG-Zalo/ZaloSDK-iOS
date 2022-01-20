@@ -62,6 +62,7 @@ didAuthenticateWithResponse:(ZOOauthResponseObject *)response;
 @property (assign, nonatomic) enum ZAZaloSDKAuthenType zaloAuthenType;
 @property (strong, nonatomic) NSString * codeChallenge;
 @property (strong, nonatomic) NSString * refreshToken;
+@property (strong, nonatomic) NSString * guestSession;
 @property (strong, nonatomic) NSDictionary *extInfo;
 @property (weak, nonatomic) id<ZOLoginViewControllerDelegate> delegate;
 @property (assign, nonatomic) BOOL isAccountProtectForm;
