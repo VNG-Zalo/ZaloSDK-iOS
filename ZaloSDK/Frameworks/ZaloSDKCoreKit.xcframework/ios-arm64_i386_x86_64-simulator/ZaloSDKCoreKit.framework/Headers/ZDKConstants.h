@@ -51,8 +51,8 @@ static NSString *const ZDK_FROMSOURCE_ZALOAPP = @"2";
 
 static NSString *const ZDK_OS_iOS = @"2";
 
-static NSString *const ZDK_CORE_VERSION_NAME = @"4.1.0120";
-static NSString *const ZDK_CORE_VERSION_CODE = @"410120";
+static NSString *const ZDK_CORE_VERSION_NAME = @"4.1.0607";
+static NSString *const ZDK_CORE_VERSION_CODE = @"410607";
 
 static NSString *const kZDKSDKDidFinishGetSDKIDAndPrivateKeyNotification = @"kZDKSDKDidFinishGetSDKIDAndPrivateKeyNotification";
 static NSString *const kZDKSDKDidFinishGetDeviceIdWithCallbackKeyNotification = @"kZDKSDKDidFinishGetDeviceIdWithCallbackKeyNotification";
@@ -83,7 +83,8 @@ typedef NS_ENUM(NSInteger, ZAMEventActionType) {
     ZAMEventActionTypeProtectAcc = 15,
     ZAMEventActionTypeStartScreen = 16,
     ZAMEventActionTypeEndScreen = 17,
-    ZAMEventActionTypeCrashLog = 18
+    ZAMEventActionTypeCrashLog = 18,
+    ZAMEventActionTypeRevokeTokenApple = 19
 };
 
 static NSInteger const ZAMEventSubActionTypeAuthenViaZaloApp = 1;
@@ -97,3 +98,4 @@ static NSInteger const ZAMEventSubActionTypeRecoveryPassMail = 1;// API Path: fo
 static NSInteger const ZAMEventSubActionTypeRecoveryGuestAcc = 2;// API Path: recover-guest
 static NSInteger const ZAMEventSubActionTypeProtectAccMail = 1;
 static NSInteger const ZAMEventSubActionTypeProtectAccCMND = 2;
+static NSInteger const ZAMEventSubActionTypeRevokeTokenApple = 1;

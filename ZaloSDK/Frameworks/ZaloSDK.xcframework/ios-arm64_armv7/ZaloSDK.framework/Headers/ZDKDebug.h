@@ -21,12 +21,13 @@ typedef NS_ENUM(NSInteger, ZDKDebugEventType) {
     kZDKDebugEventTypeGuestProtectAccountWithCMND,
     kZDKDebugEventTypeDidGetAccessToken,
     kZDKDebugEventTypeDidValidatedRefreshToken,
-    kZDKDebugEventTypeDidValidatedGuestSession
+    kZDKDebugEventTypeDidValidatedGuestSession,
+    kZDKDebugEventTypeRevokeTokenApple
 };
 @interface ZDKDebug : NSObject
 + (instancetype) sharedInstance;
 @property (nonatomic, assign) BOOL enable;
 -(void)sendDebugMessageWithType:(ZDKDebugEventType) type data:(NSDictionary *)data;
 
-- (void)sendErrorDebugMessageWithType:(enum ZDKDebugEventType)type data:(ZOOauthResponseObject *)oauthResponse;
+- (void)sendErrorDebugMessageWithType:(enum ZDKDebugEventType)type data:(ZOResponseObject *)oauthResponse;
 @end

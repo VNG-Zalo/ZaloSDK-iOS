@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/ZDK.h</key>
 		<data>
-		10I7nWZhXM3qJZnfMC+1ADeZAUs=
+		0ITmDLkqMPmcNypBYxKsomAC3to=
 		</data>
 		<key>Headers/ZDKConfig.h</key>
 		<data>
@@ -14,7 +14,7 @@
 		</data>
 		<key>Headers/ZDKDebug.h</key>
 		<data>
-		bgLMjojkOsXYLDbJAkIhQ9JXZfU=
+		/vb5m544DKWwtHTgaLQ9EhcZG9I=
 		</data>
 		<key>Headers/ZOFeed.h</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		VAqI256/bcyDMxJOQxV9jLq3xb8=
+		Z7ttKTrl0E1uisrMpjmgG+0PqHU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -75,11 +75,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			10I7nWZhXM3qJZnfMC+1ADeZAUs=
+			0ITmDLkqMPmcNypBYxKsomAC3to=
 			</data>
 			<key>hash2</key>
 			<data>
-			7eQKwCD98Kpr4AKvvY+nqRcyfwzRoldd9ukXmW8qbuY=
+			fYodJ5F/YwAmlooayniCDo5O6S+CFQjIpA+qlpvX4i0=
 			</data>
 		</dict>
 		<key>Headers/ZDKConfig.h</key>
@@ -97,11 +97,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			bgLMjojkOsXYLDbJAkIhQ9JXZfU=
+			/vb5m544DKWwtHTgaLQ9EhcZG9I=
 			</data>
 			<key>hash2</key>
 			<data>
-			cdwXKA4Xv0Gtx1lP6GTFVY9vEjY/qgzqCeK6RUTQamI=
+			jdflSeQ07TAUzN0gVNKyClzPVgFi/Litj8gCgKR/dwc=
 			</data>
 		</dict>
 		<key>Headers/ZOFeed.h</key>

@@ -150,6 +150,10 @@ Login Zalo with Apple account
                      extInfo:(NSDictionary * _Nullable)extInfo
            completionHandler: (void (^ _Nullable)(ZOOauthResponseObject* _Nonnull response)) handler;
 
+- (void)revokeTokenAppleWithAccessToken:(NSString * _Nonnull)accessToken
+                                extInfo:(NSDictionary * _Nullable)extInfo
+                                handler:(void (^ _Nullable)(ZOResponseObject * _Nonnull response))handler;
+
 - (ZOLoginType) lastLoginType;
 
 - (void)unauthenticate;
