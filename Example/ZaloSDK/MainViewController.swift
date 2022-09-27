@@ -30,6 +30,28 @@ class MainViewController: UITableViewController {
         logout()
         self.performSegue(withIdentifier: "showLoginController", sender: self)
     }
+    
+    @IBAction func shareMessageButtonDidTouch(_ sender: Any) {
+        let feed = ZOFeed(
+                link: "http://developers.zalo.me/",
+                appName: "Tên Của App Tích Hợp",
+                message: "Câu message muốn chia sẻ", others: nil)
+        ZaloSDK.sharedInstance().sendMessage(feed, in: self) { response in
+            print("\(#function): \(response?.isSucess)")
+        }
+    }
+    
+    
+    @IBAction func shareFeedButtonDidTouch(_ sender: Any) {
+        let feed = ZOFeed(
+                link: "http://developers.zalo.me/",
+                appName: "Tên Của App Tích Hợp",
+                message: "Câu message muốn chia sẻ", others: nil)
+        ZaloSDK.sharedInstance().share(feed, in: self) { response in
+            print("\(#function): \(response?.isSucess)")
+        }
+    }
+    
 }
 
 extension MainViewController {

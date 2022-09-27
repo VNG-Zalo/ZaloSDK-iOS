@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AfH-ap-c8M">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AfH-ap-c8M">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -94,7 +94,7 @@ Demo</string>
                             <tableViewSection id="AoP-OC-nVQ">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="fTa-p5-bhp">
-                                        <rect key="frame" x="0.0" y="44.5" width="375" height="100"/>
+                                        <rect key="frame" x="0.0" y="50" width="375" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fTa-p5-bhp" id="bBH-Bp-k6G">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
@@ -135,7 +135,7 @@ Demo</string>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" shouldIndentWhileEditing="NO" rowHeight="60" id="aiD-Yd-1EJ">
-                                        <rect key="frame" x="0.0" y="144.5" width="375" height="60"/>
+                                        <rect key="frame" x="0.0" y="150" width="375" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aiD-Yd-1EJ" id="POK-SF-Wbd">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
@@ -158,8 +158,56 @@ Demo</string>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" shouldIndentWhileEditing="NO" rowHeight="60" id="P5p-fc-XD4">
+                                        <rect key="frame" x="0.0" y="210" width="375" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="P5p-fc-XD4" id="TQ5-Oa-09A">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5YP-yV-VOg">
+                                                    <rect key="frame" x="20" y="5" width="335" height="50"/>
+                                                    <color key="backgroundColor" red="0.0" green="0.56078431370000004" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <state key="normal" title="Share Message"/>
+                                                    <connections>
+                                                        <action selector="shareMessageButtonDidTouch:" destination="0Ic-Cd-SzZ" eventType="touchUpInside" id="70W-r6-Ixx"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="5YP-yV-VOg" firstAttribute="leading" secondItem="TQ5-Oa-09A" secondAttribute="leading" constant="20" id="6mN-5S-Smh"/>
+                                                <constraint firstItem="5YP-yV-VOg" firstAttribute="top" secondItem="TQ5-Oa-09A" secondAttribute="top" constant="5" id="Kzc-74-2MD"/>
+                                                <constraint firstAttribute="trailing" secondItem="5YP-yV-VOg" secondAttribute="trailing" constant="20" id="jTF-4D-s2I"/>
+                                                <constraint firstAttribute="bottom" secondItem="5YP-yV-VOg" secondAttribute="bottom" constant="5" id="ov6-Mk-D0u"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" shouldIndentWhileEditing="NO" rowHeight="60" id="L2m-3T-WvK">
+                                        <rect key="frame" x="0.0" y="270" width="375" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="L2m-3T-WvK" id="Wlb-qh-NWZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mKG-NB-L8z">
+                                                    <rect key="frame" x="20" y="5" width="335" height="50"/>
+                                                    <color key="backgroundColor" red="0.0" green="0.56078431370000004" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <state key="normal" title="Share Feed"/>
+                                                    <connections>
+                                                        <action selector="shareFeedButtonDidTouch:" destination="0Ic-Cd-SzZ" eventType="touchUpInside" id="lmW-Kh-rBA"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="mKG-NB-L8z" firstAttribute="leading" secondItem="Wlb-qh-NWZ" secondAttribute="leading" constant="20" id="Dgg-aq-BWf"/>
+                                                <constraint firstAttribute="trailing" secondItem="mKG-NB-L8z" secondAttribute="trailing" constant="20" id="E8c-tl-pCg"/>
+                                                <constraint firstAttribute="bottom" secondItem="mKG-NB-L8z" secondAttribute="bottom" constant="5" id="VtR-sj-4Ca"/>
+                                                <constraint firstItem="mKG-NB-L8z" firstAttribute="top" secondItem="Wlb-qh-NWZ" secondAttribute="top" constant="5" id="zy6-cz-J6X"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" shouldIndentWhileEditing="NO" rowHeight="60" id="xWD-5y-cEc">
-                                        <rect key="frame" x="0.0" y="204.5" width="375" height="60"/>
+                                        <rect key="frame" x="0.0" y="330" width="375" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xWD-5y-cEc" id="Qmb-IP-l2m">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
